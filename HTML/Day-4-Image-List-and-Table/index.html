@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image, List & Table</title>
+</head>
+<body>
+    <header>
+        <h1>Image, List & Table</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Image</h2>
+            <div>
+                <img width="400" height="400" src="./images/peacock-feather.jpg" alt="closup of a peacock feather">
+                <img src="./images/sunrise.jpg" width="400" height="400" alt="sunrise view from a green hill top">
+            </div>
+            <h3>Figure & Figcaption</h3>
+            <figure>
+                <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="Top view of trees" loading="lazy">
+                <figcaption><a target="_blank" href="https://www.flaticon.com/free-icons/seach" title="seach icons">Seach icons created by gqadirbarejo - Flaticon</a></figcaption>
+            </figure>
+            <h3>Resposnive Image (Picture Tag)</h3>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desktop.webp">
+                <source media="(min-width: 576px)" srcset="./images/tablet.webp">
+                <img loading="lazy" src="./images/mobile.webp" alt="a person watching sunset sitting on a rock surrounded by water">
+            </picture>
+
+            <h2>Table</h2>
+            <table border>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Emp. Name</th>
+                        <th>Designation</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Sohan</td>                        
+                        <td rowspan="2">Sr. Web Developer</td>
+                        <td>60,000</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Gulnaaz</td>             
+                        <td>60,000</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Mohan</td>                        
+                        <td>Sr. HR</td>
+                        <td>40,000</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Geeta</td>                        
+                        <td>Manager</td>
+                        <td>80,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total</th>
+                        <td>180000</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <h2>Lists</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Pineapple</li>
+            </ul>
+            <ul type="circle">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Pineapple</li>
+            </ul>
+            <ul type="square">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Pineapple</li>
+            </ul>
+            <ul type="none">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Pineapple</li>
+            </ul>
+            <h3>Ordered List</h3>
+            <h4>Frontend Roadmap</h4>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>CSS Frameworks/Library (Bootstrap/ tailwind/Material UI)</li>
+                <li>JS Frameworks/Library (React/Anguler/Vue)</li>
+            </ol>
+            <ol type="i">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>CSS Frameworks/Library (Bootstrap/ tailwind/Material UI)</li>
+                <li>JS Frameworks/Library (React/Anguler/Vue)</li>
+            </ol>
+            <ol type="A">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>CSS Frameworks/Library (Bootstrap/ tailwind/Material UI)</li>
+                <li>JS Frameworks/Library (React/Anguler/Vue)</li>
+            </ol>
+            <h3>Definition List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheet</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+
+            <h3>Nested List</h3>
+            <ol>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, minima.</li>
+                <li>Illum quibusdam earum accusamus dolorem officia quas, fugit velit reprehenderit!</li>
+                <li>Blanditiis ea natus ex accusamus doloremque consectetur, eveniet officiis nemo.
+                    <ol type="i">
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                        <li>item 4</li>
+                        <li>item 5</li>
+                    </ol>
+                </li>
+                <li>Fugiat, tempora saepe quia ab quam neque voluptas. Esse, perspiciatis!</li>
+                <li>Neque, cum facere nesciunt culpa nobis soluta provident cumque blanditiis!</li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>

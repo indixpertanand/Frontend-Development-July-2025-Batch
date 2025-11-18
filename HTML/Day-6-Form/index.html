@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Form</h1>
+        <form action="#" method="get">
+            <div>
+                <label>Full Name<span class="mandatory">*</span></label>
+                <input required autofocus type="text" pattern="[a-zA-Z\s]+" minlength="3" maxlength="40" name="name" placeholder="John Doe">
+            </div>
+            <div>
+                <label>Email<span class="mandatory">*</span></label>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required name="email" placeholder="username@domain.com">
+            </div>
+            <div>
+                <label>Mobile No</label>
+                <input type="text" minlength="10" pattern="^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$" name="mob" placeholder="91-1234567890">
+            </div>
+            <div>
+                <label>Weight</label>
+                <input type="number" name="weight" value="40.64" placeholder="Enter your Weight">
+            </div>
+            <div>
+                <label>DOB<span class="mandatory">*</span></label>
+                <input type="date" min="2004-10-01" max="2007-10-01" required name="dob" placeholder="Enter your DOB">
+            </div>
+            <div>
+                <label>Gender<span class="mandatory">*</span></label>
+                <input type="radio" name="gender" value="male" required> <label>Male</label>
+                <input type="radio" name="gender" value="female" required><label>Female</label>
+                <input type="radio" name="gender" value="others" required><label>Others</label>
+            </div>
+            <div>
+                <label>Skills</label>
+                <input type="checkbox" name="skills" value="c" > <label>C</label>
+                <input type="checkbox" name="skills" value="python" ><label>Python</label>
+                <input type="checkbox" name="skills" value="HTML" ><label>HTML</label>
+                <input type="checkbox" name="skills" value="bootstrap"><label>Bootstrap</label>
+            </div>
+            
+            <div>
+                <label>City</label>
+                <select name="city">
+                    <option value="" selected disabled>Select City</option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Motihari">Motihari</option>
+                    <option value="Jodhpur" >Jodhpur</option>
+                    <option value="Aligarh">Aligarh</option>
+                    <option value="Bageshwar">Bageshwar</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Introduce Yourself</label>
+                <textarea minlength="40"  name="introduction" rows="6" cols="40"></textarea>
+            </div>
+            <div>
+                <label>Attach Resume</label>
+                <input type="file" name="resume">
+            </div>
+            <div>
+                <label>Password<span class="mandatory">*</span></label>
+                <input type="password" required name="password" placeholder="Password">
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+            <button type="button">Aanand</button>
+            <p><strong>Note:</strong> Fields marked with <span class="mandatory">*</span> can not be left empty</p>
+        </form>
+    </header>
+</body>
+</html>
