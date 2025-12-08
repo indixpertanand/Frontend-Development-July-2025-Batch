@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        *{
+            color: red;
+        }
+        p{
+            color: black;
+        }
+        #important{
+            color: green;
+            font-weight: bold;
+        }
+        .text-blue{
+            color: blue;
+        }
+        h1, h2, p, h3{
+            margin-top: 0;
+        }
+        [role="button"]{
+          cursor: pointer;  
+        }
+        [disabled], [readonly]{
+            background: #888;
+            color: #000;
+            opacity: .7;
+        }
+
+        [aria-label*="call"]{
+            color: green;
+        }
+        [aria-label~="sales"]{
+            color: aquamarine;
+        }
+        .bg-black{
+            background: black;
+            color: #fff;
+        }
+        .bg-black p{
+            color: white;
+        }
+        .bg-black>p{
+            color: aqua;
+        }
+
+        /* ul + h3{
+            margin-top: 40px;
+        } */
+        ul ~ h3{
+            margin-top: 40px;
+        }
+    </style> 
+</head>
+<body>
+    <main>
+        <h1 class="text-blue">Introduction to css</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, molestias corrupti! Asperiores, excepturi assumenda alias culpa recusandae libero ex porro?</p>
+        <section>
+            <h2 class="text-blue">Secondary Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias.</p>
+        </section>
+        <section>
+            <h2 >Secondary Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias.</p>
+        </section>
+        <section>
+            <h2 class="text-blue">Secondary Heading</h2>
+            <p id="important">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias.</p>
+        </section>
+        <section class="bg-black">
+            <h2>Secondary Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime numquam sint praesentium explicabo atque neque enim debitis quisquam, perferendis sequi?</p>
+            </div>
+            <h3>Third Level Heading</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Distinctio nesciunt dolore libero deleniti non!</li>
+                <li>Corporis provident ducimus veniam inventore ex.</li>
+                <li>Harum alias assumenda quae cum dolore!</li>
+                <li>Eaque officia eum labore reprehenderit iste!</li>
+            </ul>
+            <h3>Third Level Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias.</p>
+            <div>
+                <h3>Third Level Heading 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias.</p>
+            </div>
+        </section>
+        <div role="button" >Click Here</div>
+        <form action="">
+            <input type="text" disabled>
+            <input type="text" value="text" readonly>
+        </form>
+
+        <a href="tel: 001256536256" aria-label="Click to sales department" >001256536256</a>
+        <a href="tel: 001256536256"  aria-label="Click to call Support department" >001256536256</a>
+        <a href="tel: 001256536256" aria-label="Click to call us"  >001256536256</a>
+        <a href="tel: 001256536256" aria-label="Click to connect us"  >001256536256</a>
+
+    </main>
+</body>
+</html>

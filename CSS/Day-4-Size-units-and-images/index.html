@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size, Unit & Images</title>
+    <style>
+        body{
+            margin: 0;
+            font-size: 14px;
+        }
+        .bg-red{
+            background: red;
+        }
+        .box{
+            width: 50%;
+            height: 200px
+        }
+        span.box{
+            display: inline-block;
+        }
+
+        .w-min-content{
+            width: min-content;
+            min-width: 300px;
+        }
+        .w-max-content{
+            width: max-content;
+            max-width: 100%;
+        }
+        .w-fit-content{
+            width: fit-content;
+        }
+        .vh-100{
+            height: 100vh
+        }
+        .vw-100{
+            width: 100vw
+        }
+        h2{
+            font-size: 30px;
+        }
+        h2 span{
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Size, Unit & Images</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Size</h2>
+            <div class="box bg-red">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, expedita voluptatum assumenda sed odio et debitis non doloribus illo ea!
+            </div>
+            <span>This is another inline element</span>
+            <span class="box bg-red">this is an inline element</span>
+            <span>This is another inline element</span>
+            <span>This is another inline element</span>
+            <div class="box bg-red w-min-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, expedita voluptatum 
+            </div>
+            <div class="bg-red w-max-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, expedita voluptatum assumenda sed odio et debitis non doloribus illo ea!
+            </div>
+            <div class="bg-red w-fit-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </section>
+        <section>
+            <h2>Units <span>(EM)</span></h2>
+            <div class="vh-100 vw-100 bg-red"></div>
+        </section>
+    </main>
+</body>
+</html>

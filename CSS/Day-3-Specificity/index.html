@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade Rule</title>
+    <style>
+        .text-red{
+            color: red;
+        }
+        #special{
+            color: blue;
+        }
+        .highlight{
+            color: green;
+        }
+       
+        .about p{
+            color: brown;
+        }
+        #services p{
+            color: blueviolet;
+        }
+        h1{
+            color: yellow;
+        }
+        p{
+            color: aquamarine !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="text-red">CSS Cascade Rule</h1>
+        <p class="highlight text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, omnis.</p>
+        <section class="about ">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo similique aspernatur mollitia praesentium ab repellendus dolor accusamus sequi quisquam quas.</p>
+        </section>
+        <section id="services" style="margin-top: 40px">
+            <p style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa qui possimus assumenda nam at unde maxime, asperiores hic officiis est.</p>
+        </section>
+    </main>
+</body>
+</html>
