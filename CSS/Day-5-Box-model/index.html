@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            padding-left: 0;
+        }
+        li{
+            margin-bottom: 10px;
+            /* border-width: 2px;
+            border-style: solid;
+            border-color: red; */
+            border: 2px red solid ;
+        }
+        .list-item-1{
+            padding: 20px
+        }
+        .list-item-2{
+            padding: 20px 30px;
+        }
+        .list-item-3{
+            padding: 20px 30px 40px;
+        }
+        .list-item-4{
+            padding: 10px 20px 30px 40px;
+            border-color: blue;
+        }
+        .list-item-5{
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-bottom: 30px;
+            border-style: double;
+            border-width: 5px;
+        }
+
+        .second-list .list-item-3{
+            padding-block: 40px 50px;
+            margin-block: 30px 40px;
+            width: 100%;
+            margin-inline-start: 20px;
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Box Model</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Padding</h2>
+            <ul type="none">
+                <li class="list-item-1">Item 1</li>
+                <li class="list-item-2">Item 2</li>
+                <li class="list-item-3">Item 3</li>
+                <li class="list-item-4">Item 4</li>
+                <li class="list-item-5">Item 5</li>
+            </ul>
+            <ul type="none" class="second-list">
+                <li class="list-item-1">Item 1</li>
+                <li class="list-item-2">Item 2</li>
+                <li class="list-item-3">Item 3</li>
+                <li class="list-item-4">Item 4</li>
+                <li class="list-item-5">Item 5</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

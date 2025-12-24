@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 10vh 80vh 10vh;
+            grid-template-columns: 20% 80%;
+            grid-template-areas: 
+                "header header"
+                "sidebar content"
+                "sidebar footer";
+            /* gap: 20px; */
+        }
+
+        header{
+            background: lightgray;
+            /* grid-row: 1 / span 1;
+            grid-column: 1 / span 2; */
+            grid-area: header;
+        }
+        nav{
+            background: black;
+            color: white;
+            /* grid-row: 2 / span 2;
+            grid-column: 1 / span 1; */
+            grid-area: sidebar
+        }
+        main{
+            /* grid-row: 2 / span 1;
+            grid-column: 2 / span 1; */
+            grid-area: content
+        }
+        footer{
+            /* grid-row: 3 / span 1;
+            grid-column: 2 / span 1; */
+            background-color: lightgray;
+            grid-area: footer
+        }
+
+        .grid{
+            display: grid;
+            gap: 10px;
+        }
+        .grid-item{
+            height: 100px;
+            background-color: gray;
+        }
+        .grid-1{
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+        }
+        .grid-2{
+            max-width: 100%;
+            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        .card{
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            max-width: 300px;
+            display: grid;
+        }
+        .card>*{
+            grid-area: 1/1
+        }
+        .card .card-body{
+            /* position: relative; */
+            padding: 20px;
+        }
+        .card .card-body p:first-of-type{
+            margin-bottom: 20px;
+        }
+         .card img{
+            max-width: 100%;
+            /* position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%; */
+            height: 100%;
+            object-fit: cover;
+         }
+         .card .card-body button{
+            margin-top: 20px
+         }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Sidebar</nav>
+    <main>
+        <div class="grid grid-1">
+            <div class="grid-item">Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam deserunt illum sapiente debitis repellat doloribus adipisci similique ratione non possimus.</div>
+            <div class="grid-item">Item 2</div>
+        </div>
+        <div class="grid grid-2">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+
+        <div class="card">
+            <img src="./../Tasks/Task-2/bg-image.png" alt="">
+            <div class="card-body">
+                <h2>Learning CSS Basics</h2>
+                <p>By John Doe</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas magnam quasi iure nostrum quae porro.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas magnam quasi iure nostrum quae porro.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas magnam quasi iure nostrum quae porro.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas magnam quasi iure nostrum quae porro.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <!-- <div class="grid grid-3">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div> -->
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

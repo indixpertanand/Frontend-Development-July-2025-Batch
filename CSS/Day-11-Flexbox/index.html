@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .d-flex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* height: 400px */
+            /* gap: 20px; */
+            row-gap: 40px;
+            column-gap: 10px;
+        }
+        .flex-items{
+            min-height: 50px;
+            background: lightgray;
+            width: 21%;
+            /* flex-shrink: 1;
+            flex-basis: 300px; */
+            flex: 1 0 350px
+        }
+        .flex-items:first-child{
+            flex-grow: 1;
+        }
+        .flex-items:nth-child(3){
+            align-self: stretch;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px
+        }
+
+        .image{
+            width: 40%;
+
+            height: 100px;
+            background: #f0ff0f
+        }
+        .text{
+            flex-grow: 1;
+            width: 40%
+        }
+        .order-1{
+            order: 1;
+        }
+        @media (max-width: 767.98px) {
+                .image{
+                    width: 100%;
+                }
+                .text{
+                    width: 100%;
+                }
+                .image.order-1{
+                    order: 0;
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+    </header>
+    <main>
+        <div class="d-flex">
+            <div class="flex-items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum reiciendis aliquam, repellat eaque maiores nostrum. Alias, pariatur nobis, quibusdam eos veritatis non quos illo molestiae doloremque vitae iure libero! Rerum quisquam, eum et nisi est magni animi modi, vero eaque iure, qui dolor dolore velit. Dolores repudiandae dicta possimus vitae.</div>
+            <div class="flex-items">Item 2</div>
+            <div class="flex-items">Item 3</div>
+            <div class="flex-items">Item 4</div>
+            <div class="flex-items">Item 5</div>
+            <!-- <div class="flex-items">Item 5</div> -->
+        </div>
+
+        <div class="flex-container">
+            <div class="image">Image</div>
+            <div class="text">text</div>
+            <div class="image order-1">image</div>
+            <div class="text">text</div>
+        </div>
+    </main>
+</body>
+</html>

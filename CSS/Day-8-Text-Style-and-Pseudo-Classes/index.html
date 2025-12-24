@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Style and Pseudo Classes</title>
+    <style>
+        .text-left{
+            text-align: left;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-justify{
+            text-align: justify;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .underline{
+            text-decoration: underline;
+            text-decoration-style:double;
+            text-decoration-color: blueviolet;
+            text-decoration-thickness: 2px;
+        }
+        .overline{
+            text-decoration: overline;
+            text-decoration-style:double;
+            text-decoration-color: blueviolet;
+            text-decoration-thickness: 2px;
+        }
+        .strike-through{
+            text-decoration: line-through;
+            text-decoration-style:double;
+            text-decoration-color: blueviolet;
+            text-decoration-thickness: 2px;
+        }
+        section{
+            padding-block: 100px;
+        }
+        a{
+            text-decoration: none;
+            letter-spacing: 10px;
+        }
+        .text-uppercase{
+            text-transform: uppercase;
+        }
+        .text-lowercase{
+            text-transform: lowercase;
+        }
+        .text-capitalize{
+            text-transform: capitalize;
+        }
+    h1{
+        letter-spacing: -3px;
+        text-shadow: 2px 2px 2px red;
+        color: white;
+    }
+    p{
+        word-spacing:2px;
+    }
+    p.text-left{
+        white-space: nowrap;
+    }
+    .hover:hover{
+        color: red;
+    }
+    .focus:focus{
+        outline-color: red;
+    }
+    .active:active{
+        background: red;
+        color: white;
+    }
+    a:visited{
+        color: green;
+    }
+    input:valid{
+        border-color: green;
+    }
+    input:invalid{
+        border-color: red;
+    }
+    </style>
+</head>
+<body>
+    <header><h1>Text Style and Pseudo Classes</h1></header>
+    <main>
+        <section>
+            <h2>Heading Level 1</h2>
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam. Ipsum illo expedita iusto quam dignissimos vero quis rerum? Reprehenderit, recusandae dicta, veritatis totam dignissimos dolorem commodi odio odit quas optio, debitis eum placeat quasi sit voluptatibus quod velit et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam voluptas architecto sed, nostrum assumenda, voluptate facere enim qui doloremque saepe? Earum quis vel culpa impedit optio veritatis iusto ratione quae atque, eum expedita accusamus minus veniam cupiditate omnis fugit, fugiat aspernatur possimus, iure eligendi sunt quia nisi nulla labore.</p>
+            <p class="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam. Ipsum illo expedita iusto quam dignissimos vero quis rerum? Reprehenderit, recusandae dicta, veritatis totam dignissimos dolorem commodi odio odit quas optio, debitis eum placeat quasi sit voluptatibus quod velit et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam voluptas architecto sed, nostrum assumenda, voluptate facere enim qui doloremque saepe? Earum quis vel culpa impedit optio veritatis iusto ratione quae atque, eum expedita accusamus minus veniam cupiditate omnis fugit, fugiat aspernatur possimus, iure eligendi sunt quia nisi nulla labore.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam. Ipsum illo expedita iusto quam dignissimos vero quis rerum? Reprehenderit, recusandae dicta, veritatis totam dignissimos dolorem commodi odio odit quas optio, debitis eum placeat quasi sit voluptatibus quod velit et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam voluptas architecto sed, nostrum assumenda, voluptate facere enim qui doloremque saepe? Earum quis vel culpa impedit optio veritatis iusto ratione quae atque, eum expedita accusamus minus veniam cupiditate omnis fugit, fugiat aspernatur possimus, iure eligendi sunt quia nisi nulla labore.</p>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam. Ipsum illo expedita iusto quam dignissimos vero quis rerum? Reprehenderit, recusandae dicta, veritatis totam dignissimos dolorem commodi odio odit quas optio, debitis eum placeat quasi sit voluptatibus quod velit et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam voluptas architecto sed, nostrum assumenda, voluptate facere enim qui doloremque saepe? Earum quis vel culpa impedit optio veritatis iusto ratione quae atque, eum expedita accusamus minus veniam cupiditate omnis fugit, fugiat aspernatur possimus, iure eligendi sunt quia nisi nulla labore.</p>
+
+            <p>Lorem ipsum dolor sit amet <span class="underline">consectetur adipisicing</span> elit. Molestias minima </p>
+            <p>Lorem ipsum dolor sit amet <span class="overline">consectetur adipisicing</span> elit. Molestias minima </p>
+            <p>Lorem ipsum dolor sit amet <span class="strike-through">consectetur adipisicing</span> elit. Molestias minima </p>
+
+            <a href="#" class="hover">Link here</a>
+            <button class="focus">Focus Button</button>
+            <a href="//google.com" target="_blank" class="visited active">Google</a>
+
+            <form action="#">
+                <input type="text" minlength="3" maxlength="7" >
+                <input type="text" minlength="3" maxlength="7" required>
+            </form>
+
+
+            <p class="text-uppercase">Lorem ipsum dolor sit amet.</p>
+            <p class="text-lowercase">Lorem ipsum dolor sit amet.</p>
+            <p class="text-capitalize">Lorem ipsum dolor sit amet.</p>
+
+
+        </section>
+    </main>
+</body>
+</html>

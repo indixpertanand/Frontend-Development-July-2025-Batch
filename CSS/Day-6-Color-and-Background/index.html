@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color & Background</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: #047f04;
+        }
+        .section-4 h2{
+            /* color: rgb(188, 188, 0); */
+            color: rgba(188, 188, 0, .5);
+        }
+        .section-3 h2{
+            /* color: hsl(240, 100%, 50%) */
+            color: hsla(240, 100%, 50%, 1)
+        }
+        .section-1 h2{
+            color: rgb(223, 6, 6);
+        }
+        .section-5{
+            background-color: #090eb1;
+            color: white;
+            padding: 20px
+        }
+        .section-5 h2{
+            color: white;
+        }
+        .section-6{
+            padding: 20px;
+            /* background-color: #090eb1;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s");
+            background-size: cover;
+            background-position: center center; */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            /* background-repeat: repeat;
+            background-attachment: fixed; */
+            background: 
+                url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s") no-repeat center/100px,
+                url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s") fixed center/cover;
+                
+            color: white
+        }
+        /* linear-gradient(dir, firstColor, secondColor, .......) */
+        .bg-gradient{
+            padding: 100px 40px;
+            color: #fff;
+        }
+        .linear-gradient{
+            background-image: linear-gradient(30deg, red 20%, blue 33.33% 66.66%, green 66.66%);
+        }
+        /* radial-gradient(position, firstColor, secondColor, .......) */
+        .radial-gradient{
+            background-image: radial-gradient(ellipse farthest-corner at center, red, blue, green);
+            /* max-width: 500px;
+            aspect-ratio: 1/1; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Color & Background</h1>
+    </header>
+    <main>
+        <section class="section-1">
+            <h2>Heading 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="section-2">
+            <h2>Heading 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="section-3">
+            <h2>Heading 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="section-4">
+            <h2>Heading 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="section-5">
+            <h2>Heading 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="section-6">
+            <h2>Heading 6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        
+        <section class="section-5">
+            <h2>Heading 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="section-5">
+            <h2>Heading 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="section-5">
+            <h2>Heading 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quod! Delectus recusandae est non excepturi dolores distinctio saepe quisquam fugit!</p>
+        </section>
+        <section class="bg-gradient linear-gradient">
+            <h2>Heading 7</h2>
+            <p>Lorem ipsum dolor sit
+        </section>
+        <section class="bg-gradient radial-gradient">
+            <h2>Heading 8</h2>
+            <p>Lorem ipsum dolor sit
+        </section>
+    </main>
+</body>
+</html>

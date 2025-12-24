@@ -43,6 +43,34 @@
         h2 span{
             font-size: 1.5rem;
         }
+        .d-inline-block{
+            display: inline-block;
+            width: 33%;
+        }
+        .img-responsive{
+            max-width: 100%;
+            height: auto;
+        }
+        .img-thumbnail{
+            padding: 5px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .img-circle{
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+        .object-fit-contain{
+            object-fit: contain;
+        }
+        .object-fit-cover{
+            object-fit: cover;
+            object-position: 10% 20%;
+        }
+        .object-fit-fill{
+            object-fit: fill;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +101,27 @@
             <h2>Units <span>(EM)</span></h2>
             <div class="vh-100 vw-100 bg-red"></div>
         </section>
+        <section>
+            <h2>Images</h2>
+            <h3>Responsive Images</h3>
+            <div class="d-inline-block">
+                <img width="500" height="500" class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="">
+            </div>
+            <div class="d-inline-block">
+                <img width="500" height="500" class="img-responsive img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="">
+            </div>
+            <div class="d-inline-block">
+                <img width="500" height="500" class="img-responsive img-circle object-fit-fill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="">
+            </div>
+            <div class="d-inline-block">
+                <img width="500" height="500" class="img-responsive img-circle object-fit-contain" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="">
+            </div>
+            <div class="d-inline-block">
+                <img width="500" height="500" class="img-responsive img-circle object-fit-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="">
+            </div>
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime exercitationem accusantium maiores quos? Ad impedit pariatur molestias facilis non, minus eum eligendi in quis ratione quaerat, mollitia ducimus reprehenderit officiis?</span>
+        </section>
+
     </main>
 </body>
 </html>

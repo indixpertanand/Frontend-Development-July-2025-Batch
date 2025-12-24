@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Position Overflow</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 200vh
+        }
+        ul{
+            /* list-style-type:lower-alpha; */
+            /* padding-left: 0; */
+            /* list-style-image: url('./Hugging_Face_Emoji.webp'); */
+            list-style: none;
+            /* padding-left: 0; */
+            list-style-position: inside;
+        }
+        li{
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        li::before{
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('./Hugging_Face_Emoji_original.webp') no-repeat center/14px;
+            border-radius: 50%;
+            position: absolute;
+            left: -25px;
+        }
+        .static{
+            position: static;
+            top: 40px;
+        }
+        .relative{
+            position: relative;
+            /* top: 40px;
+            left: 40px */
+        }
+        .absolute{
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 4;
+        }
+        .sticky{
+            position: sticky;
+            top: 20px;
+            z-index: 5;
+        }
+        .box-wrapper{
+            position: relative;
+            background: #fff;
+            height: 150px
+        }
+        .box{
+            width: 150px;
+            aspect-ratio: 1/1;
+            position: absolute;
+        }
+        .bg-red{
+            background-color: red;
+            left: 40px;
+            top: 40px;
+            /* z-index: 2; */
+        }
+        .bg-green{
+            background-color: green;
+            left: 20px;
+            top: 20px;
+            /* z-index: 1; */
+        }
+        .bg-blue{
+            background-color: blue;
+            z-index: -1;
+        }
+
+        .container{
+            padding: 100px 40px;
+            position: relative;
+            background: gray;
+        }
+        .content{
+            padding: 40px 0;
+            height: 230px;
+            background: white;
+        }
+        .container .box{
+            top: 0;
+            left: 0;
+            height: 150px;
+            /* overflow: visible; */
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow-y: auto;
+            overflow-x: hidden;
+            word-wrap: break-word;
+        }
+        .container .box::-webkit-scrollbar{
+            width: 5px;
+            height: 5px;
+        }
+        .container .box::-webkit-scrollbar-track{
+            background: black;
+            border-radius: 5px;
+        }
+        .container .box::-webkit-scrollbar-thumb{
+            background: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>List Position Overflow</h1>
+    </header>
+    <main>
+        <section class="relative">
+            <p class="static">this is a paragraph</p>
+            <p class="absolute">Lorem ipsum dolor sit amet. absolute element</p>
+            <p class="relative">this is a relative paragraph</p>
+            <p class="sticky">this is a sticky paragraph</p>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Voluptates alias blanditiis repellat ex!</li>
+                <li>Nulla tempora tempore labore a.</li>
+                <li>Placeat totam quae iste ea!</li>
+                <li>Minima dolores illum quis repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veniam consequuntur ut iure ullam voluptates at, similique maiores recusandae nam provident eius error quisquam praesentium eveniet cupiditate fugit, excepturi quos? Voluptatem adipisci ab nam cupiditate inventore cum nobis. Optio, iusto debitis ducimus recusandae ab eligendi id tenetur dolor laboriosam molestias.</li>
+            </ul>
+            <img src="./Hugging_Face_Emoji_original.webp" width="40" height="40" alt="" class="fixed">
+        
+            <div class="box-wrapper">
+                <div class="box bg-red">Box 1</div>
+                <div class="box bg-green">Box 2</div>
+                <div class="box bg-blue">Box 3</div>
+            </div>
+
+            <div class="container">
+                <div class="content">
+                    <div class="box bg-red"> Lorem ipsum dolor sit amet consectetur adipisicing elit.Exercitationemneque,  vel ratione possimus fugit temporibus ipsam quasi, cupiditate nostrum sequi odio natus maxime a assumenda dolore sunt delectus harum adipisci reprehenderit. Ab tempora asperiores dolore fugiat quis repellendus eos ipsum!</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
