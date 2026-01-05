@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform & Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding-left: 50px;
+            padding-bottom: 100px;
+        }
+        .box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border: 5px solid #000;
+        }
+        .translate{
+            transform: translateY(-30px);
+        }
+        .rotate{
+            border-top: 5px solid green;
+            transform: rotate(100deg);
+        }
+        .skew{
+            transform: skewY(-20deg);
+        }
+        .scale{
+            transform: scaleX(2);
+        }
+        .scale-translate{
+            transform:  scale(1.5) translate(50px);
+        }
+        .origin-top-left{
+            transform-origin: top left;
+        }
+        button{
+            transition: all .5s ease-in-out
+        }
+        button:hover{
+            background: red;
+            color: white;
+            /* transition: background-color .5s linear */
+        }
+        .transition{
+            /* transition: all .5s linear; */
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease-in;
+        }
+        .transition:hover{
+            
+            transform: translate(200px);
+        }
+
+        .box{
+            /* animation-name: changebg;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+            animation: changebg 1s both infinite alternate;
+        }
+
+        @keyframes changebg {
+            from{background-color: #f00;}
+            to{background-color: #fff;}
+        }
+        .animation{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation: moveAndChangeShape 4s both infinite;
+        }
+        
+        @keyframes moveAndChangeShape {
+            0%{translate: 0px; border-radius: 0;}
+            25%{translate: 200px; border-radius: 0;}
+            50%{translate: 200px; border-radius: 50%;}
+            75%{translate: 0px; border-radius: 50%;}
+            100%{translate: 0px; border-radius: 0;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transform & Animation</h1>
+    </header>
+    <main>
+        <h2>Transform</h2>
+        <h3>Translate</h3>
+        <div class="box translate"></div>
+        <h3>Rotate</h3>
+        <div class="box rotate"></div>
+        <h3>Skew</h3>
+        <div class="box skew"></div>
+        <h3>Scale</h3>
+        <div class="box scale"></div>
+        <h3>Composite</h3>
+        <div class="box scale-translate"></div>
+        <h2>Transform-origin</h2>
+        <div class="box rotate origin-top-left"></div>
+        <button>Button</button>
+        <div class="box transition"></div>
+        <div class="animation"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px
+}
+
+img{max-width: 100%; height: auto; display: block;}
+
+.img-1, .img-2{
+    mask-image: url("./../images/mask1.png");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+
+.img-3{
+    mask-image: linear-gradient(transparent, black);
+}
+.img-4{
+    mask-image: linear-gradient(to right, #000 25%, transparent 25% 50%, #000 50% 75%, transparent 75%);
+    mask-size: 8px 100%;
+    /* mask-repeat: no-repeat; */
+}
+.img-5{
+    mask-image: radial-gradient(circle at center, #000 80%, transparent 80%);
+    mask-size: 30px 30px;
+    /* mask-repeat: no-repeat; */
+    /* mask-position: 0 10%; */
+}
+
+.img-6{
+    mask: linear-gradient(to right, #000 25%, transparent 25% 50%, #000 50% 75%, transparent 75%) center / 8px 100% no-repeat
+}
+
+.img-8{
+    mask-image: url("./../images/pngtree-abstract-element-blue-pastel-blob-png-image_6568040.png");
+      mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: 70% -10%;
+}
+.img-9{
+    mask-image: url("./../images/pngtree-blob-line-aesthetic-png-image_6560473.png");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+.bg-dark{
+    background-color: #000;
+}
+
+.img-7{
+    inline-size: max(50%, 300px);
+    aspect-ratio: 1/1;
+    mask: 
+        radial-gradient(circle at center, #000 50%, transparent 50%) center/50px 50px,
+        linear-gradient(45deg, transparent 40%, black 40% 60%, transparent 60%)center/50px 50px,
+        linear-gradient(-45deg, transparent 40%, black 40% 60%, transparent 60%)center/50px 50px;
+
+    mask-composite: exclude;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gradient{
+    min-height: 200px;
+}
+
+.gradient1{
+    background-image: linear-gradient(transparent, black);
+}
+.gradient2{
+    background-image: linear-gradient(#000 25%, transparent 25% 50%, #000 50% 75%, transparent 75%);
+    background-size: 100% 8px;
+    background-repeat: no-repeat;
+}

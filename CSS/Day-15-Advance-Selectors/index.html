@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors</title>
+    <style>
+        /* li{
+            margin-bottom: 20px;
+        }
+        li:last-child{
+            margin-bottom: 0;
+        } */
+        .text-red{
+            color: red;
+        }
+        li:not(:last-child){
+            margin-bottom: 20px;
+        }
+        .list-item:not(:has(+.text-red)){
+            color: gray;
+        }
+
+        .d-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        .d-grid img{
+            max-width: 80%;
+            height: auto;
+        }
+        .grid-item{
+            box-shadow: 4px 4px 10px rgba(0,0,0,.14);
+            text-align: center;
+        }
+        .grid-item .content{
+            text-align: left;
+            padding: 20px;
+        }
+
+
+        /* First Way */
+        /* .grid-item:not(:has(>img)) h3{
+            font-size: 30px;
+        } */
+
+        .grid-item h3{
+            font-size: 30px;
+        }
+
+        .grid-item:has(>img) h3{
+            font-size: 21px;
+        }
+
+        .card{
+            background: var(--card-bg, #fff);
+            border: 1px solid var(--card-border-color, lightgray)
+        }
+
+        /* .section1 .card, .section2 .card, #section3 .card{
+            height: 200px;
+            width: 300px
+        } */
+        /* :is /:where */
+        /* :is(.section1, .section2, #section3) .card{
+            height: 200px;
+            width: 300px
+        } */
+        :where(.section1, .section2, #section3) .card{
+            height: 200px;
+            width: 300px
+        }
+
+        main ul:first-child{
+            margin-top: 40px
+        }
+        ul li:only-child{
+            color: green
+        }
+        main section:nth-child(2n){
+            background-color: aqua;
+        }
+
+        main div:nth-of-type(2){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <ul>
+            <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quo.</li>
+            <li class="list-item">Exercitationem saepe distinctio repudiandae labore sapiente ea dignissimos illum voluptates!</li>
+            <li class="list-item">Maiores laborum nesciunt aperiam vitae in aliquam expedita vero hic!</li>
+            <li class="list-item text-red">Minus fugit, atque molestiae suscipit deleniti sunt ipsam sapiente neque.</li>
+            <li class="list-item">Voluptas est odit quo beatae nostrum minima quidem fugiat rerum!</li>
+        </ul>
+
+        <div class="d-grid">
+            <div class="grid-item">
+                <img src="./../Day-9-List-Position-Overflow/Hugging_Face_Emoji_original.webp" alt="">
+                <div class="content">
+                    <h3>Card</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus tempora mollitia voluptatibus incidunt expedita!</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./../Day-9-List-Position-Overflow/Hugging_Face_Emoji_original.webp" alt="">
+                <div class="content">
+                    <h3>Card</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus tempora mollitia voluptatibus incidunt expedita!</p>
+                </div>
+            </div>
+            <div class="grid-item ">
+                <div class="content">
+                    <h3>Card</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus tempora mollitia voluptatibus incidunt expedita!</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="content">
+                    <h3>Card</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus tempora mollitia voluptatibus incidunt expedita!</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="section1">
+            <div class="card">
+                section 1
+            </div>
+        </section>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo ipsa porro unde dicta. Autem veniam sit quam nulla tenetur voluptate labore a dignissimos cum ab sed aperiam perferendis maiores assumenda rerum magnam qui odio in delectus, sint explicabo laboriosam.</div>
+        <section class="section2">
+            <div class="card">
+                section 2
+            </div>
+        </section>
+        <section id="section3">
+            <div class="card">
+                section 3
+            </div>
+        </section>
+    </main>
+</body>
+</html>

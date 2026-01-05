@@ -1,0 +1,115 @@
+:root{
+    --primary-color: blue;
+    --white: #fff;
+    --black: #000;
+    --dark: #343437;
+
+    /* --container-width: 1340px */
+}
+
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+.text-primary{
+    color: var(--primary-color);
+}
+.border{
+    border: 1px solid transparent;
+}
+.border-primary{
+    border-color: var(--primary-color);
+}
+
+.container{
+    max-width: var(--container-width, 1180px);
+    margin-inline: auto
+}
+.container:nth-child(2){
+    --container-width: 92%;
+}
+@media (max-width: 1399px) {
+    :root{
+        --container-width: 1140px
+    }
+}
+@media (max-width: 1199px) {
+    :root{
+        --container-width: 940px
+    }
+}
+
+/* ul{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    --columns: 5;
+    grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+@media (max-width: 991.98px){
+    ul{        
+    --columns: 3
+    }
+}
+@media (max-width: 767.98px){
+    ul{        
+    --columns: 2
+    }
+}
+@media (max-width: 574.98px){
+    ul{        
+    --columns: 1
+    }
+} */
+ul{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    --columns: 1;
+    grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+@media (min-width: 575px){
+    ul{        
+    --columns: 2
+    }
+}
+@media (min-width: 768px){
+    ul{        
+    --columns: 3
+    }
+}
+@media (min-width: 992px){
+    ul{        
+    --columns: 5
+    }
+}
+
+
+@media print{
+    :root{
+        --primary-color: red;
+    }
+    button{
+        display: none;
+    }
+}
+
+@media (orientation: portrait){
+    body{
+        background-color: aqua;
+    }
+}
+
+@media screen{
+    li{
+        color: purple;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    body{
+        background-color: lightcyan;
+    }
+}
