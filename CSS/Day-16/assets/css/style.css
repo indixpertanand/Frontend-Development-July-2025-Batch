@@ -54,8 +54,8 @@ img{max-width: 100%; height: auto; display: block;}
     aspect-ratio: 1/1;
     mask: 
         radial-gradient(circle at center, #000 50%, transparent 50%) center/50px 50px,
-        linear-gradient(45deg, transparent 40%, black 40% 60%, transparent 60%)center/50px 50px,
-        linear-gradient(-45deg, transparent 40%, black 40% 60%, transparent 60%)center/50px 50px;
+        linear-gradient(45deg, transparent 45%, black 45% 55%, transparent 55%)center/50px 50px,
+        linear-gradient(-45deg, transparent 45%, black 45% 55%, transparent 55%)center/50px 50px;
 
     mask-composite: exclude;
 }

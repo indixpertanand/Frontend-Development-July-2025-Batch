@@ -14,18 +14,22 @@
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="Travelsy" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Great+Vibes&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header class="top-header">
         <div class="top-header_top">
-            <div class="container">
-                <div class="header_top_left">
+            <div class="container d-flex justify-between align-center">
+                <div class="header_top_left d-flex align-center">
                     <a href="tel: 1 1234567890" aria-label="call us"><i class="fa-solid fa-phone-volume"></i> +1 1234567890</a>
                     <a href="mailto: example@gmail.com" aria-label="write us an email"><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
                 </div>
-                <div class="header_top_right">
+                <div class="header_top_right d-flex align-center">
                     <a href="#"><i class="fa-solid fa-user"></i> Login/Register</a>
-                    <div class="social_links top-header_social">
+                    <div class="social_links top-header_social d-flex align-center">
                         <a target="_blank" rel="nofollow" href="#" aria-label="visit our facebook page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" fill="currentColor" /></svg></a>
                         <a target="_blank" rel="nofollow" href="#" aria-label="visit our Twitter page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z" fill="currentColor" /></svg></a>
                         <a target="_blank" rel="nofollow" href="#" aria-label="visit our Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
@@ -78,11 +82,11 @@
                     <input type="text" name="venuetype" placeholder="Type Of Venue*" required>
                     <input type="date" name="eventdate" placeholder="Pick a date*" required>
                     <input type="text" pattern="/d{6}" name="zipcode" title="Please enter 6 digit area Pincode" placeholder="Zip code*" required>
-                    <button type="submit">Search <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn" type="submit">Search <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" >
             <div class="rect rect-left"></div>
             <div class="container">
                 <div class="about_left">
