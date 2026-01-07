@@ -23,39 +23,42 @@
     <header class="top-header">
         <div class="top-header_top">
             <div class="container d-flex justify-between align-center">
-                <div class="header_top_left d-flex align-center">
+                <div class="header_top_left d-flex gx-2 align-center">
                     <a href="tel: 1 1234567890" aria-label="call us"><i class="fa-solid fa-phone-volume"></i> +1 1234567890</a>
                     <a href="mailto: example@gmail.com" aria-label="write us an email"><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
                 </div>
-                <div class="header_top_right d-flex align-center">
-                    <a href="#"><i class="fa-solid fa-user"></i> Login/Register</a>
-                    <div class="social_links top-header_social d-flex align-center">
-                        <a target="_blank" rel="nofollow" href="#" aria-label="visit our facebook page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" fill="currentColor" /></svg></a>
-                        <a target="_blank" rel="nofollow" href="#" aria-label="visit our Twitter page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z" fill="currentColor" /></svg></a>
-                        <a target="_blank" rel="nofollow" href="#" aria-label="visit our Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
-                        <a target="_blank" rel="nofollow" href="#" aria-label="visit our instagram page"><i class="fa-brands fa-instagram"></i></a>
+                <div class="header_top_right d-flex gx-4 align-center">
+                    <a href="#" class="d-flex gx-2 align-center"><span class="btn btn-white btn-circle btn-circle-sm"><i class="fa-solid fa-user"></i></span> Login/Register</a>
+                    <div class="social_links position-relative top-header_social d-flex gx-2 align-center">
+                        <a class="btn btn-white btn-circle btn-circle-sm" target="_blank" rel="nofollow" href="#" aria-label="visit our facebook page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" fill="currentColor" /></svg></a>
+                        <a class="btn btn-white btn-circle btn-circle-sm" target="_blank" rel="nofollow" href="#" aria-label="visit our Twitter page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z" fill="currentColor" /></svg></a>
+                        <a class="btn btn-white btn-circle btn-circle-sm" target="_blank" rel="nofollow" href="#" aria-label="visit our Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
+                        <a class="btn btn-white btn-circle btn-circle-sm" target="_blank" rel="nofollow" href="#" aria-label="visit our instagram page"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <nav class="navbar">
-            <div class="container">
+            <div class="container d-flex justify-between align-center">
                 <a class="navbar_left" href="./index.html">
                     <img src="./assets/images/logo.svg" alt="travelsy logo">
                 </a>
-                <div class="navbar_right">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Host A Venue</a></li>
-                        <li><a href="#">Hotels</a></li>
-                        <li><a href="#">Blog</a></li>
+                <div class="navbar_right d-flex align-center gx-4">
+                    <ul class="list-unstyled d-flex menubar">
+                        <li><a class="nav-link active" href="./index.html">Home</a></li>
+                        <li><a class="nav-link" href="#">About Us</a></li>
+                        <li><a class="nav-link" href="#">Host A Venue</a></li>
+                        <li><a class="nav-link" href="#">Hotels</a></li>
+                        <li><a class="nav-link" href="#">Blog</a></li>
                     </ul>
-                    <button type="button">
+                    <button type="button" class="btn btn-outline-primary btn-circle">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <a href="#">Contact Us <i class="fa-solid fa-phone-volume"></i></a>
+                    <a href="#" class="btn btn-primary">Contact Us <i class="fa-solid fa-phone-volume"></i></a>
                 </div>
+                <button type="button" class="menubar-toggler btn btn-outline-primary btn-circle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
@@ -355,16 +358,16 @@
     <footer>
         <section class="newsletter">
             <div class="container">
-                <div class="newsletter_content">
-                    <h2>Subscribe for Latest Newsletter</h2>
-                    <form action="#" id="newsletterForm">
+                <div class="newsletter_content bg-primary justify-between d-flex align-center">
+                    <h2 class="h3 text-white">Subscribe for Latest Newsletter</h2>
+                    <form action="#" class="d-flex align-center" id="newsletterForm">
                         <input type="email" name="email" placeholder="Your Email Address">
-                        <input type="submit" value="Subscribe">
+                        <input class="btn btn-white" type="submit" value="Subscribe">
                     </form>
                 </div>
             </div>
         </section>
-        <section class="footer-content">
+        <section class="footer-content bg-primary-subtle">
             <div class="container">
                 <div class="footer-content_wrapper">
                     <div class="footer-about">
