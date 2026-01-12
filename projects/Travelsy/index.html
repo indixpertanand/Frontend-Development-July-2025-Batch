@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Great+Vibes&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -64,14 +66,14 @@
     </header>
     <main>
         <section class="top-banner">
-            <div class="container">
+            <div class="container d-grid align-center ">
                 <div class="top-banner_left">
                     <div class="subtitle">Relax & Enjoy the Vacation</div>
-                    <h1>Choose Travelsy To Book Your Hotel</h1>
+                    <h1 class="">Choose <span class="text-primary">Travelsy</span> To Book Your Hotel</h1>
                     <p>Lorem ipsum dolor sit amet consectetur. Hac consequat hac arcu sed. Lectus ante ut in mattis ornare commodo nisi. Tortor tincidunt fames quam fusce convallis eget pulvinar.</p>
-                    <a href="#">Make Reservation <i class="fa-solid fa-calendar"></i></a>
+                    <a href="#" class="btn btn-primary">Make Reservation <i class="fa-solid fa-calendar"></i></a>
                 </div>
-                <div class="top-banner_right">
+                <div class="top-banner_right d-grid">
                     <img src="./assets/images/about-img-1.jpg" alt="One male and one female tourist reading map">
                     <img src="./assets/images/about-img-2.jpg" alt="Two hot air baloons hovering over hills">
                     <img src="./assets/images/about-img-3.jpg" alt="A women in yellow dress standing over a rock and looking towards an island">
@@ -81,17 +83,17 @@
         </section>
         <section class="search-section">
             <div class="container">
-                <form action="#">
+                <form action="#" class="d-flex align-center">
                     <input type="text" name="venuetype" placeholder="Type Of Venue*" required>
                     <input type="date" name="eventdate" placeholder="Pick a date*" required>
                     <input type="text" pattern="/d{6}" name="zipcode" title="Please enter 6 digit area Pincode" placeholder="Zip code*" required>
-                    <button class="btn" type="submit">Search <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn-primary" type="submit">Search <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
             </div>
         </section>
-        <section class="about-us" >
-            <div class="rect rect-left"></div>
-            <div class="container">
+        <section class="about-us position-relative" >
+            <div class="rect rect-left position-absolute"></div>
+            <div class="container d-grid position-relative">
                 <div class="about_left">
                     <img src="./assets/images/about-image.png" alt="">
                 </div>
@@ -102,68 +104,139 @@
                     </div>
                     <p>Amet cursus sit amet dictum. At erat pellentesque adipiscing commodo. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. In arcu cursus euismod quis viverra nibh cras pulvinar. Vulputate eu sceler felis imperdiet proin fermentum. Arcu vitae elementum curabitur vitae nunc sed velit.</p>
                     <p>Rutrum quisque non tellus orci ac. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Interdum posuere lorem ipsum dolor sit. Egestas maecenas pharetra convallis posuere morbi.</p>
-                    <ul>
-                        <li>Donec adipiscing tristique risus nec feugiat in</li>
-                        <li>Donec adipiscing tristique risus nec feugiat in</li>
-                        <li>Donec adipiscing tristique risus nec feugiat in</li>
+                    <ul class="list-unstyled custom-arrow">
+                        <li><span><img src="./assets/images/icon-send.svg" alt=""></span>Donec adipiscing tristique risus nec feugiat in</li>
+                        <li><span><img src="./assets/images/icon-send.svg" alt=""></span>Donec adipiscing tristique risus nec feugiat in</li>
+                        <li><span><img src="./assets/images/icon-send.svg" alt=""></span>Donec adipiscing tristique risus nec feugiat in</li>
                     </ul>
-                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-primary">Read More <i class="fa-solid fa-arrow-right"></i></a>
                 </div> 
             </div>
-            <div class="decorator plane">
+            <div class="decorator plane position-absolute">
                 <img src="./assets/images/plane.svg" alt="">
             </div>
         </section>
-        <section class="top-destinations">
+        <section class="top-destinations bg-gradient-1">
             <div class="container">
-                <div class="section-heading">
+                <div class="section-heading text-center">
                     <div class="subtitle">Top Destinations</div>
                     <h2 class="section-title">Popular Hotels For Booking</h2>
                 </div>
-                <div class="destination-wrapper">
-                    <div class="destination-card">
-                        <img src="./assets/images/destination-1.jpg" alt="">
-                        <div class="card-content">
-                            <h3 class="card-title">Some Amazing Title Here</h3>
-                            <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
-                            <div>
-                                <span><i class="fa-solid fa-location-dot"></i> Museums</span>
-                                <span><i class="fa-solid fa-user"></i> 12 Person Capacity</span>
+                <div class="swiper destination-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="destination-card">
+                                <img src="./assets/images/destination-1.jpg" alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title h4">Some Amazing Title Here</h3>
+                                    <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <div class="d-flex gx-3">
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-location-dot text-primary"></i> Museums</span>
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-user text-primary"></i> 12 Person Capacity</span>
+                                    </div>
+                                    <div class="link-wrapper d-flex align-center justify-between">
+                                        <div><span class="h3">$150/</span> Per Night</div>
+                                        <a href="#" class="btn btn-primary btn-circle" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="link-wrapper">
-                                <div><span>$150/</span> Per Night</div>
-                                <a href="#" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="destination-card">
+                                <img src="./assets/images/destination-2.jpg" alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title h4">Some Amazing Title Here</h3>
+                                    <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <div class="d-flex gx-3">
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-location-dot text-primary"></i> Museums</span>
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-user text-primary"></i> 18 Person Capacity</span>
+                                    </div>
+                                    <div class="link-wrapper d-flex align-center justify-between">
+                                        <div><span class="h3">$250/</span> Per Night</div>
+                                        <a href="#" class="btn btn-primary btn-circle" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="swiper-slide">
+                            <div class="destination-card">
+                                <img src="./assets/images/destination-3.jpg" alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title h4">Some Amazing Title Here</h3>
+                                    <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <div class="d-flex gx-3">
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-location-dot text-primary"></i> Museums</span>
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-user text-primary"></i> 24 Person Capacity</span>
+                                    </div>
+                                    <div class="link-wrapper d-flex align-center justify-between">
+                                        <div><span class="h3">$280/</span> Per Night</div>
+                                        <a href="#" class="btn btn-primary btn-circle" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="destination-card">
+                                <img src="./assets/images/destination-1.jpg" alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title h4">Some Amazing Title Here</h3>
+                                    <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <div class="d-flex gx-3">
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-location-dot text-primary"></i> Museums</span>
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-user text-primary"></i> 12 Person Capacity</span>
+                                    </div>
+                                    <div class="link-wrapper d-flex align-center justify-between">
+                                        <div><span class="h3">$150/</span> Per Night</div>
+                                        <a href="#" class="btn btn-primary btn-circle" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="destination-card">
+                                <img src="./assets/images/destination-2.jpg" alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title h4">Some Amazing Title Here</h3>
+                                    <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <div class="d-flex gx-3">
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-location-dot text-primary"></i> Museums</span>
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-user text-primary"></i> 18 Person Capacity</span>
+                                    </div>
+                                    <div class="link-wrapper d-flex align-center justify-between">
+                                        <div><span class="h3">$250/</span> Per Night</div>
+                                        <a href="#" class="btn btn-primary btn-circle" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="swiper-slide">
+                            <div class="destination-card">
+                                <img src="./assets/images/destination-3.jpg" alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title h4">Some Amazing Title Here</h3>
+                                    <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <div class="d-flex gx-3">
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-location-dot text-primary"></i> Museums</span>
+                                        <span class="d-flex gx-2 align-center"><i class="fa-solid fa-user text-primary"></i> 24 Person Capacity</span>
+                                    </div>
+                                    <div class="link-wrapper d-flex align-center justify-between">
+                                        <div><span class="h3">$280/</span> Per Night</div>
+                                        <a href="#" class="btn btn-primary btn-circle" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="destination-card">
-                        <img src="./assets/images/destination-2.jpg" alt="">
-                        <div class="card-content">
-                            <h3 class="card-title">Some Amazing Title Here</h3>
-                            <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
-                            <div>
-                                <span><i class="fa-solid fa-location-dot"></i> Museums</span>
-                                <span><i class="fa-solid fa-user"></i> 18 Person Capacity</span>
-                            </div>
-                            <div class="link-wrapper">
-                                <div><span>$250/</span> Per Night</div>
-                                <a href="#" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
+                    <div class="swiper-button">
+                        <div class="swiper-button-prev">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3513 7.76285C12.5822 7.99371 12.693 8.27268 12.6838 8.59973C12.6745 8.92679 12.5541 9.20575 12.3225 9.43661L9.06151 12.6976H21.9322C22.2592 12.6976 22.5336 12.8084 22.7552 13.03C22.9769 13.2516 23.0873 13.5256 23.0865 13.8519C23.0865 14.1789 22.9757 14.4533 22.7541 14.6749C22.5324 14.8966 22.2585 15.007 21.9322 15.0062H9.06151L12.3513 18.296C12.5822 18.5269 12.6976 18.8012 12.6976 19.1191C12.6976 19.4369 12.5822 19.7108 12.3513 19.9409C12.1205 20.1718 11.8461 20.2872 11.5283 20.2872C11.2105 20.2872 10.9365 20.1718 10.7064 19.9409L5.4254 14.6599C5.30997 14.5445 5.22801 14.4194 5.17953 14.2848C5.13105 14.1501 5.10719 14.0058 5.10796 13.8519C5.10796 13.698 5.1322 13.5537 5.18069 13.419C5.22917 13.2844 5.31074 13.1593 5.4254 13.0439L10.7353 7.73399C10.9469 7.52237 11.2112 7.41655 11.5283 7.41655C11.8453 7.41655 12.1197 7.53199 12.3513 7.76285Z" fill="#4691F2"/>
+                            </svg>
                         </div>
-                    </div>
-                    <div class="destination-card">
-                        <img src="./assets/images/destination-3.jpg" alt="">
-                        <div class="card-content">
-                            <h3 class="card-title">Some Amazing Title Here</h3>
-                            <p>Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
-                            <div>
-                                <span><i class="fa-solid fa-location-dot"></i> Museums</span>
-                                <span><i class="fa-solid fa-user"></i> 24 Person Capacity</span>
-                            </div>
-                            <div class="link-wrapper">
-                                <div><span>$280/</span> Per Night</div>
-                                <a href="#" aria-label="Click here for more details"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
+                        <div class="swiper-button-next">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.3524 19.9409C15.1215 19.71 15.0107 19.4311 15.0199 19.104C15.0292 18.7769 15.1496 18.498 15.3812 18.2671L18.6422 15.0062H5.77151C5.44445 15.0062 5.17011 14.8953 4.94848 14.6737C4.72685 14.4521 4.61642 14.1781 4.61719 13.8518C4.61719 13.5248 4.72801 13.2504 4.94964 13.0288C5.17127 12.8072 5.44522 12.6968 5.77151 12.6975H18.6422L15.3524 9.40771C15.1215 9.17684 15.0061 8.9025 15.0061 8.58468C15.0061 8.26685 15.1215 7.99289 15.3524 7.7628C15.5832 7.53194 15.8576 7.4165 16.1754 7.4165C16.4932 7.4165 16.7672 7.53194 16.9973 7.7628L22.2783 13.0438C22.3937 13.1593 22.4757 13.2843 22.5242 13.419C22.5727 13.5536 22.5965 13.6979 22.5957 13.8518C22.5957 14.0058 22.5715 14.15 22.523 14.2847C22.4745 14.4194 22.393 14.5444 22.2783 14.6599L16.9684 19.9697C16.7568 20.1814 16.4925 20.2872 16.1754 20.2872C15.8584 20.2872 15.584 20.1718 15.3524 19.9409Z" fill="#4691F2"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -172,77 +245,99 @@
         <section class="statistics">
             <div class="rect rect-right"></div>
             <div class="container">
-                <div class="stats-wrapper">
-                    <div class="stats">
-                        <div class="icon">
+                <div class="stats-wrapper d-grid">
+                    <div class="stats text-center bg-white">
+                        <div class="icon btn btn-circle">
                             <img src="./assets/images/icon-hotel.svg" alt="">
                         </div>
                         <div class="stats-text">
-                            <div class="stats-count">1000+</div>
+                            <div class="stats-count h2">1000+</div>
                             <div class="stats-label">Hotel</div>
                         </div>
                     </div>
-                    <div class="stats">
-                        <div class="icon">
+                    <div class="stats text-center bg-white">
+                        <div class="icon btn btn-circle">
                             <img src="./assets/images/icon-bed.svg" alt="">
                         </div>
                         <div class="stats-text">
-                            <div class="stats-count">4500+</div>
+                            <div class="stats-count h2">4500+</div>
                             <div class="stats-label">Rooms Available</div>
                         </div>
                     </div>
-                    <div class="stats">
-                        <div class="icon">
+                    <div class="stats text-center bg-white">
+                        <div class="icon btn btn-circle">
                             <img src="./assets/images/icon-beach.svg" alt="">
                         </div>
                         <div class="stats-text">
-                            <div class="stats-count">30+</div>
+                            <div class="stats-count h2">30+</div>
                             <div class="stats-label">Beaches View</div>
                         </div>
                     </div>
-                    <div class="stats">
-                        <div class="icon">
+                    <div class="stats text-center">
+                        <div class="icon btn btn-circle">
                             <img src="./assets/images/icon-people.svg" alt="">
                         </div>
                         <div class="stats-text">
-                            <div class="stats-count">8000+</div>
+                            <div class="stats-count h2">8000+</div>
                             <div class="stats-label">Guests</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="best-places">
+        <section class="best-places bg-primary-subtle">
             <div class="container">
-                <div class="section-heading">
-                    <div class="subtitle">Top Destinations</div>
-                    <h2 class="section-title">Popular Hotels For Booking</h2>
+                <div class="section-heading text-center">
+                    <div class="subtitle">Best Places For Your Party</div>
+                    <h2 class="section-title">Place That Accommodates Your Guest</h2>
                 </div>
             </div>
             <div class="container container-max container-right">
-                <div class="places-wrapper">
-                    <div class="place-card">
-                        <img src="./assets/images/best-places-1.jpg" alt="">
-                        <div class="card-content">
-                            <a href="#">Wedding</a>
+                <div class="swiper places-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="place-card">
+                                <img src="./assets/images/best-places-1.jpg" alt="">
+                                <div class="card-content">
+                                    <a class="h3" href="#">Wedding</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="place-card">
+                                <img src="./assets/images/best-places-2.jpg" alt="">
+                                <div class="card-content">
+                                    <a class="h3" href="#">Birthday</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="place-card">
+                                <img src="./assets/images/best-places-3.jpg" alt="">
+                                <div class="card-content">
+                                    <a class="h3" href="#">Corporate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="place-card">
+                                <img src="./assets/images/best-places-4.jpg" alt="">
+                                <div class="card-content">
+                                    <a class="h3" href="#">Baby Shower</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="place-card">
-                        <img src="./assets/images/best-places-2.jpg" alt="">
-                        <div class="card-content">
-                            <a href="#">Birthday</a>
+                    <div class="swiper-button">
+                        <div class="swiper-button-prev">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3513 7.76285C12.5822 7.99371 12.693 8.27268 12.6838 8.59973C12.6745 8.92679 12.5541 9.20575 12.3225 9.43661L9.06151 12.6976H21.9322C22.2592 12.6976 22.5336 12.8084 22.7552 13.03C22.9769 13.2516 23.0873 13.5256 23.0865 13.8519C23.0865 14.1789 22.9757 14.4533 22.7541 14.6749C22.5324 14.8966 22.2585 15.007 21.9322 15.0062H9.06151L12.3513 18.296C12.5822 18.5269 12.6976 18.8012 12.6976 19.1191C12.6976 19.4369 12.5822 19.7108 12.3513 19.9409C12.1205 20.1718 11.8461 20.2872 11.5283 20.2872C11.2105 20.2872 10.9365 20.1718 10.7064 19.9409L5.4254 14.6599C5.30997 14.5445 5.22801 14.4194 5.17953 14.2848C5.13105 14.1501 5.10719 14.0058 5.10796 13.8519C5.10796 13.698 5.1322 13.5537 5.18069 13.419C5.22917 13.2844 5.31074 13.1593 5.4254 13.0439L10.7353 7.73399C10.9469 7.52237 11.2112 7.41655 11.5283 7.41655C11.8453 7.41655 12.1197 7.53199 12.3513 7.76285Z" fill="#4691F2"/>
+                            </svg>
                         </div>
-                    </div>
-                    <div class="place-card">
-                        <img src="./assets/images/best-places-3.jpg" alt="">
-                        <div class="card-content">
-                            <a href="#">Corporate</a>
-                        </div>
-                    </div>
-                    <div class="place-card">
-                        <img src="./assets/images/best-places-4.jpg" alt="">
-                        <div class="card-content">
-                            <a href="#">Baby Shower</a>
+                        <div class="swiper-button-next">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.3524 19.9409C15.1215 19.71 15.0107 19.4311 15.0199 19.104C15.0292 18.7769 15.1496 18.498 15.3812 18.2671L18.6422 15.0062H5.77151C5.44445 15.0062 5.17011 14.8953 4.94848 14.6737C4.72685 14.4521 4.61642 14.1781 4.61719 13.8518C4.61719 13.5248 4.72801 13.2504 4.94964 13.0288C5.17127 12.8072 5.44522 12.6968 5.77151 12.6975H18.6422L15.3524 9.40771C15.1215 9.17684 15.0061 8.9025 15.0061 8.58468C15.0061 8.26685 15.1215 7.99289 15.3524 7.7628C15.5832 7.53194 15.8576 7.4165 16.1754 7.4165C16.4932 7.4165 16.7672 7.53194 16.9973 7.7628L22.2783 13.0438C22.3937 13.1593 22.4757 13.2843 22.5242 13.419C22.5727 13.5536 22.5965 13.6979 22.5957 13.8518C22.5957 14.0058 22.5715 14.15 22.523 14.2847C22.4745 14.4194 22.393 14.5444 22.2783 14.6599L16.9684 19.9697C16.7568 20.1814 16.4925 20.2872 16.1754 20.2872C15.8584 20.2872 15.584 20.1718 15.3524 19.9409Z" fill="#4691F2"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -251,59 +346,62 @@
         <section class="testimonials">
             <div class="rect rect-left"></div>
             <div class="container">
-                <div class="section-heading">
+                <div class="section-heading text-center">
                     <div class="subtitle">Testimonials</div>
                     <h2 class="section-title">What Our Traveler Say&apos;s</h2>
                 </div>
-                <div class="testimonials-wrapper">
-                    <div class="testimonial-card">
-                        <div class="card-image">
-                            <img src="./assets/images/testimonials-1.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <div class="testimonial-title">
-                                <div class="reviewer-name">Tommy Murphy</div>
-                                <p class="designation">Global Directives Architect</p>
+                <div class="main-wrapper">
+
+                    <div class="testimonials-wrapper">
+                        <div class="testimonial-card">
+                            <div class="card-image">
+                                <img src="./assets/images/testimonials-1.jpg" alt="">
                             </div>
-                            <div class="testimonial-text">
-                                <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
-                            </div>
-                            <div class="testimonials-link">
-                                <a href="#" aria-label="Click here to view all testimonials"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="card-image">
-                            <img src="./assets/images/testimonials-2.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <div class="testimonial-title">
-                                <div class="reviewer-name">Tommy Murphy</div>
-                                <p class="designation">Global Directives Architect</p>
-                            </div>
-                            <div class="testimonial-text">
-                                <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
-                            </div>
-                            <div class="testimonials-link">
-                                <a href="#" aria-label="Click here to view all testimonials"><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="card-content">
+                                <div class="testimonial-title">
+                                    <div class="reviewer-name h4">Tommy Murphy</div>
+                                    <p class="designation">Global Directives Architect</p>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
+                                </div>
+                                <div class="testimonial-link">
+                                    <a href="#" class="btn btn-circle btn-primary" aria-label="Click here to view all testimonials"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="card-image">
-                            <img src="./assets/images/testimonials-3.jpg" alt="">
+                        <div class="testimonial-card">
+                            <div class="card-image">
+                                <img src="./assets/images/testimonials-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="testimonial-title">
+                                    <div class="reviewer-name h4">Julia </div>
+                                    <p class="designation">Directives Architect</p>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
+                                </div>
+                                <div class="testimonial-link">
+                                    <a href="#" class="btn btn-circle btn-primary" aria-label="Click here to view all testimonials"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <div class="testimonial-title">
-                                <div class="reviewer-name">Tommy Murphy</div>
-                                <p class="designation">Global Directives Architect</p>
+                        <div class="testimonial-card active">
+                            <div class="card-image">
+                                <img src="./assets/images/testimonials-3.jpg" alt="">
                             </div>
-                            <div class="testimonial-text">
-                                <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
-                            </div>
-                            <div class="testimonials-link">
-                                <a href="#" aria-label="Click here to view all testimonials"><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="card-content">
+                                <div class="testimonial-title">
+                                    <div class="reviewer-name h4">Murphy</div>
+                                    <p class="designation">Global Architect</p>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
+                                </div>
+                                <div class="testimonial-link">
+                                    <a href="#" class="btn btn-circle btn-primary" aria-label="Click here to view all testimonials"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -369,20 +467,20 @@
         </section>
         <section class="footer-content bg-primary-subtle">
             <div class="container">
-                <div class="footer-content_wrapper">
+                <div class="footer-content_wrapper d-flex gx-5 gy-5 justify-between">
                     <div class="footer-about">
                         <a href="./index.html"><img src="./assets/images/logo.svg" alt="travelsy logo" /></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <div class="social_links footer_social">
-                            <a target="_blank" rel="nofollow" href="#" aria-label="visit our facebook page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" fill="currentColor" /></svg></a>
-                            <a target="_blank" rel="nofollow" href="#" aria-label="visit our Twitter page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z" fill="currentColor" /></svg></a>
-                            <a target="_blank" rel="nofollow" href="#" aria-label="visit our Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
-                            <a target="_blank" rel="nofollow" href="#" aria-label="visit our instagram page"><i class="fa-brands fa-instagram"></i></a>
+                        <div class="social_links footer_social d-flex gx-2">
+                            <a target="_blank" class="btn btn-circle btn-circle-sm btn-primary" rel="nofollow" href="#" aria-label="visit our facebook page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" fill="currentColor" /></svg></a>
+                            <a target="_blank" class="btn btn-circle btn-circle-sm btn-primary" rel="nofollow" href="#" aria-label="visit our Twitter page"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z" fill="currentColor" /></svg></a>
+                            <a target="_blank" class="btn btn-circle btn-circle-sm btn-primary" rel="nofollow" href="#" aria-label="visit our Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
+                            <a target="_blank" class="btn btn-circle btn-circle-sm btn-primary" rel="nofollow" href="#" aria-label="visit our instagram page"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="footer-text footer-link">
-                        <div class="footer-title">Quick Links</div>
-                        <nav>
+                        <div class="footer-title h5">Quick Links</div>
+                        <nav class="d-flex flex-column">
                             <a href="./index.html">Home</a>
                             <a href="#">About Us</a>
                             <a href="#">Host A Venue</a>
@@ -392,25 +490,25 @@
                         </nav>
                     </div>
                     <div class="footer-text footer-contact">
-                        <div class="footer-title">Get In Touch</div>
-                        <ul class="footer-contact_details">
-                            <li>
-                                <i class="fa-solid fa-phone-volume"></i>
+                        <div class="footer-title h5">Get In Touch</div>
+                        <ul class="footer-contact_details list-unstyled">
+                            <li class="d-flex gx-2">
+                                <span class="btn btn-circle btn-circle-sm btn-primary"><i class="fa-solid fa-phone-volume"></i></span>
                                 <a href="tel: 11234567890">+1 12345 67890</a>
                             </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
+                            <li class="d-flex gx-2">
+                                <span class="btn btn-circle btn-circle-sm btn-primary"><i class="fa-solid fa-envelope"></i></span>
                                 <a href="mailto: example@gmail.com">example@gmail.com</a>
                             </li>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
+                            <li class="d-flex gx-2">
+                                <span class="btn btn-circle btn-circle-sm btn-primary"><i class="fa-solid fa-location-dot"></i></span>
                                 1014 N Main St, Miami, Oklahoma, 74354, United States
                             </li>
                         </ul>
                     </div>
                     <div class="footer-text footer-posts">
-                        <div class="footer-title">Follow Us On @instagram</div>
-                        <ul class="footer-contact_details">
+                        <div class="footer-title h5">Follow Us On @instagram</div>
+                        <ul class="footer-social_posts list-unstyled d-grid gx-2 gy-2">
                             <li>
                                 <a href="#" title="Click here to view this post" aria-label="Click here to view this post">
                                     <img src="./assets/images/social-post-1.jpg" alt="">
@@ -446,11 +544,54 @@
                 </div>
             </div>
         </section>
-        <section class="footer_bottom">
+        <div class="footer_bottom bg-primary ">
             <div class="container">
-                <p>© 2023 All rights reserved</p>
+                <p class="text-center">© 2023 All rights reserved</p>
             </div>
-        </section>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".destination-wrapper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        var swiper = new Swiper(".places-wrapper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 1.2,
+                },
+                640: {
+                    slidesPerView: 2.2,
+                },
+                992: {
+                    slidesPerView: 3.3,
+                },
+            },
+        });
+    </script>
 </body>
 </html>
