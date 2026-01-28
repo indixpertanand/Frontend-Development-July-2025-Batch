@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .4s all
+}
+@import './variables';
+@import './funstions';
+@import './mixins';
+
+.text-primary{
+    color: map-get($colors, $key: "primary");
+}
+.text-accent{
+    color: $accent;
+}
+.text-secondary{
+    color: $secondary;
+}
+
+
+// Nested Rules
+header{
+    padding-block: 1.25rem;
+    background: #fff;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.13);
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding-left: 0;
+        a{
+            color: inherit;
+            &:hover{
+                color: $accent;
+            }
+        }
+        
+    }
+}
+
+.btn{
+    display: inline-block;
+    padding: .45rem 1rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+// .btn-primary{
+//     @include btn_varient(map-get($colors, "primary"), #fff);
+// }
+// .btn-secondary{
+//     @include btn_varient($secondary, #fff);
+// }
+// .btn-accent{
+//     @include btn_varient($accent, #fff);
+// }
+.btn-danger{
+    @include btn_varient(map-get($colors, "danger"), #fff);
+}
+
+
+.h1{
+    font-size: 32px;
+    color: $accent;
+}
+
+
+.section2 .h2{
+    @extend .h1;
+    padding: 20px;
+    background-color: $secondary;
+}
+
+
+@each $key, $val in $icon-sizes{
+    .icon-#{$key}{
+        width: $val;
+        height: $val
+    }
+}
+
+@each $key, $value in $colors{
+    .bg-#{$key}{
+        background-color: $value;
+    }
+    @for $i from 1 through 9{
+        .bg-#{$key}-#{$i * 100}{
+            background-color: lighten($value, (10 - $i) * 5%);
+        }
+    }
+    .text-#{$key}{
+        color: $value
+    }
+    .btn-#{$key}{
+       @include btn_varient($value, #fff);
+    }
+}
+.bg-primary-50{
+    background-color: rgba($primary, .5)   
+}
+

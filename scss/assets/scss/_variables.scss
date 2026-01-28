@@ -1,0 +1,27 @@
+$primary: red;
+$accent: orange;
+$secondary: gray;
+
+$colors:(
+    "primary": $primary,
+    "accent": $accent,
+    "secondary": $secondary
+);
+
+$custom_colors: (
+    "success": green,
+    "warning": rgb(244, 225, 8),
+    "danger": rgb(193, 3, 3),
+    "info": blue
+
+);
+$colors : map-merge($colors, $custom_colors);
+
+$icon-sizes: (
+    "sm": 20px,
+    "med": 32px,
+    "lg": 48px
+);
+
+
+

@@ -1,0 +1,473 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.4s all;
+}
+
+.text-primary {
+  color: red;
+}
+
+.text-accent {
+  color: orange;
+}
+
+.text-secondary {
+  color: gray;
+}
+
+header {
+  padding-block: 1.25rem;
+  background: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.13);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+header ul a {
+  color: inherit;
+}
+header ul a:hover {
+  color: orange;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.btn-danger {
+  background-color: rgb(193, 3, 3);
+  color: white;
+  border-color: rgb(193, 3, 3);
+}
+.btn-danger:hover {
+  background-color: rgb(92.5612244898, 1.4387755102, 1.4387755102);
+  color: white;
+  border-color: rgb(92.5612244898, 1.4387755102, 1.4387755102);
+}
+
+.h1, .section2 .h2 {
+  font-size: 32px;
+  color: orange;
+}
+
+.section2 .h2 {
+  padding: 20px;
+  background-color: gray;
+}
+
+.icon-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-med {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-lg {
+  width: 48px;
+  height: 48px;
+}
+
+.bg-primary {
+  background-color: red;
+}
+
+.bg-primary-100 {
+  background-color: rgb(255, 229.5, 229.5);
+}
+
+.bg-primary-200 {
+  background-color: #ffcccc;
+}
+
+.bg-primary-300 {
+  background-color: rgb(255, 178.5, 178.5);
+}
+
+.bg-primary-400 {
+  background-color: #ff9999;
+}
+
+.bg-primary-500 {
+  background-color: rgb(255, 127.5, 127.5);
+}
+
+.bg-primary-600 {
+  background-color: #ff6666;
+}
+
+.bg-primary-700 {
+  background-color: rgb(255, 76.5, 76.5);
+}
+
+.bg-primary-800 {
+  background-color: #ff3333;
+}
+
+.bg-primary-900 {
+  background-color: rgb(255, 25.5, 25.5);
+}
+
+.text-primary {
+  color: red;
+}
+
+.btn-primary {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+.btn-primary:hover {
+  background-color: #990000;
+  color: white;
+  border-color: #990000;
+}
+
+.bg-accent {
+  background-color: orange;
+}
+
+.bg-accent-100 {
+  background-color: rgb(255, 246, 229.5);
+}
+
+.bg-accent-200 {
+  background-color: #ffedcc;
+}
+
+.bg-accent-300 {
+  background-color: rgb(255, 228, 178.5);
+}
+
+.bg-accent-400 {
+  background-color: #ffdb99;
+}
+
+.bg-accent-500 {
+  background-color: rgb(255, 210, 127.5);
+}
+
+.bg-accent-600 {
+  background-color: #ffc966;
+}
+
+.bg-accent-700 {
+  background-color: rgb(255, 192, 76.5);
+}
+
+.bg-accent-800 {
+  background-color: #ffb733;
+}
+
+.bg-accent-900 {
+  background-color: rgb(255, 174, 25.5);
+}
+
+.text-accent {
+  color: orange;
+}
+
+.btn-accent {
+  background-color: orange;
+  color: black;
+  border-color: orange;
+}
+.btn-accent:hover {
+  background-color: #996300;
+  color: white;
+  border-color: #996300;
+}
+
+.bg-secondary {
+  background-color: gray;
+}
+
+.bg-secondary-100 {
+  background-color: rgb(242.75, 242.75, 242.75);
+}
+
+.bg-secondary-200 {
+  background-color: #e6e6e6;
+}
+
+.bg-secondary-300 {
+  background-color: rgb(217.25, 217.25, 217.25);
+}
+
+.bg-secondary-400 {
+  background-color: rgb(204.5, 204.5, 204.5);
+}
+
+.bg-secondary-500 {
+  background-color: rgb(191.75, 191.75, 191.75);
+}
+
+.bg-secondary-600 {
+  background-color: #b3b3b3;
+}
+
+.bg-secondary-700 {
+  background-color: rgb(166.25, 166.25, 166.25);
+}
+
+.bg-secondary-800 {
+  background-color: rgb(153.5, 153.5, 153.5);
+}
+
+.bg-secondary-900 {
+  background-color: rgb(140.75, 140.75, 140.75);
+}
+
+.text-secondary {
+  color: gray;
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: black;
+  border-color: gray;
+}
+.btn-secondary:hover {
+  background-color: #4d4d4d;
+  color: white;
+  border-color: #4d4d4d;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.bg-success-100 {
+  background-color: rgb(102.5, 255, 102.5);
+}
+
+.bg-success-200 {
+  background-color: #4dff4d;
+}
+
+.bg-success-300 {
+  background-color: rgb(51.5, 255, 51.5);
+}
+
+.bg-success-400 {
+  background-color: #1aff1a;
+}
+
+.bg-success-500 {
+  background-color: rgb(0.5, 255, 0.5);
+}
+
+.bg-success-600 {
+  background-color: #00e600;
+}
+
+.bg-success-700 {
+  background-color: rgb(0, 204.5, 0);
+}
+
+.bg-success-800 {
+  background-color: #00b300;
+}
+
+.bg-success-900 {
+  background-color: rgb(0, 153.5, 0);
+}
+
+.text-success {
+  color: green;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+.btn-success:hover {
+  background-color: #001a00;
+  color: white;
+  border-color: #001a00;
+}
+
+.bg-warning {
+  background-color: rgb(244, 225, 8);
+}
+
+.bg-warning-100 {
+  background-color: rgb(254.0952380952, 251.9464285714, 227.4047619048);
+}
+
+.bg-warning-200 {
+  background-color: rgb(253.2857142857, 249.2142857143, 202.7142857143);
+}
+
+.bg-warning-300 {
+  background-color: rgb(252.4761904762, 246.4821428571, 178.0238095238);
+}
+
+.bg-warning-400 {
+  background-color: rgb(251.6666666667, 243.75, 153.3333333333);
+}
+
+.bg-warning-500 {
+  background-color: rgb(250.8571428571, 241.0178571429, 128.6428571429);
+}
+
+.bg-warning-600 {
+  background-color: rgb(250.0476190476, 238.2857142857, 103.9523809524);
+}
+
+.bg-warning-700 {
+  background-color: rgb(249.2380952381, 235.5535714286, 79.2619047619);
+}
+
+.bg-warning-800 {
+  background-color: rgb(248.4285714286, 232.8214285714, 54.5714285714);
+}
+
+.bg-warning-900 {
+  background-color: rgb(247.619047619, 230.0892857143, 29.880952381);
+}
+
+.text-warning {
+  color: rgb(244, 225, 8);
+}
+
+.btn-warning {
+  background-color: rgb(244, 225, 8);
+  color: black;
+  border-color: rgb(244, 225, 8);
+}
+.btn-warning:hover {
+  background-color: rgb(145.2380952381, 133.9285714286, 4.7619047619);
+  color: white;
+  border-color: rgb(145.2380952381, 133.9285714286, 4.7619047619);
+}
+
+.bg-danger {
+  background-color: rgb(193, 3, 3);
+}
+
+.bg-danger-100 {
+  background-color: rgb(253.7066326531, 171.7933673469, 171.7933673469);
+}
+
+.bg-danger-200 {
+  background-color: rgb(253.3163265306, 146.6836734694, 146.6836734694);
+}
+
+.bg-danger-300 {
+  background-color: rgb(252.9260204082, 121.5739795918, 121.5739795918);
+}
+
+.bg-danger-400 {
+  background-color: rgb(252.5357142857, 96.4642857143, 96.4642857143);
+}
+
+.bg-danger-500 {
+  background-color: rgb(252.1454081633, 71.3545918367, 71.3545918367);
+}
+
+.bg-danger-600 {
+  background-color: rgb(251.7551020408, 46.2448979592, 46.2448979592);
+}
+
+.bg-danger-700 {
+  background-color: rgb(251.3647959184, 21.1352040816, 21.1352040816);
+}
+
+.bg-danger-800 {
+  background-color: rgb(243.2193877551, 3.7806122449, 3.7806122449);
+}
+
+.bg-danger-900 {
+  background-color: rgb(218.1096938776, 3.3903061224, 3.3903061224);
+}
+
+.text-danger {
+  color: rgb(193, 3, 3);
+}
+
+.btn-danger {
+  background-color: rgb(193, 3, 3);
+  color: white;
+  border-color: rgb(193, 3, 3);
+}
+.btn-danger:hover {
+  background-color: rgb(92.5612244898, 1.4387755102, 1.4387755102);
+  color: white;
+  border-color: rgb(92.5612244898, 1.4387755102, 1.4387755102);
+}
+
+.bg-info {
+  background-color: blue;
+}
+
+.bg-info-100 {
+  background-color: rgb(229.5, 229.5, 255);
+}
+
+.bg-info-200 {
+  background-color: #ccccff;
+}
+
+.bg-info-300 {
+  background-color: rgb(178.5, 178.5, 255);
+}
+
+.bg-info-400 {
+  background-color: #9999ff;
+}
+
+.bg-info-500 {
+  background-color: rgb(127.5, 127.5, 255);
+}
+
+.bg-info-600 {
+  background-color: #6666ff;
+}
+
+.bg-info-700 {
+  background-color: rgb(76.5, 76.5, 255);
+}
+
+.bg-info-800 {
+  background-color: #3333ff;
+}
+
+.bg-info-900 {
+  background-color: rgb(25.5, 25.5, 255);
+}
+
+.text-info {
+  color: blue;
+}
+
+.btn-info {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+}
+.btn-info:hover {
+  background-color: #000099;
+  color: white;
+  border-color: #000099;
+}
+
+.bg-primary-50 {
+  background-color: rgba(255, 0, 0, 0.5);
+}/*# sourceMappingURL=styles.min.css.map */

@@ -1,0 +1,12 @@
+@function is-dark($color) {
+  // Get the RGB components of the color
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  // Calculate relative luminance using the formula for perceived brightness
+  $luminance: (0.299 * $r + 0.587 * $g + 0.114 * $b) / 255;
+
+  // If luminance is less than 0.5, it’s considered dark
+  @return $luminance < 0.5;
+}

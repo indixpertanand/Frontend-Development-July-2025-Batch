@@ -1,0 +1,18 @@
+@mixin btn_varient($bg, $color){
+    background-color: $bg;
+    @if is-dark($bg){
+        color: white;
+    }@else{
+        color: black
+    }
+    border-color: $bg;
+    &:hover{
+        background-color: darken($color: $bg, $amount: 20%);
+        @if is-dark(darken($color: $bg, $amount: 20%)){
+        color: white;
+        }@else{
+            color: black
+        }
+        border-color: darken($color: $bg, $amount: 20%);
+    }
+}
