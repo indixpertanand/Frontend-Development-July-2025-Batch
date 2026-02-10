@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
+    <title>Document</title>
     <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
-     <header>
+
+<body class="pb-5 mb-5">
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-xl">
                 <a class="navbar-brand" href="#">Navbar</a>
@@ -55,25 +58,868 @@
             <div class="container">
                 <h2>Bootstrap Grid</h2>
                 <div class="row gy-4 align-items-lg-center">
-                    <div class="col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione deleniti libero molestias optio repudiandae suscipit dolore esse debitis iusto?</div>
+                    <div class="col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione
+                        deleniti libero molestias optio repudiandae suscipit dolore esse debitis iusto?</div>
                     <div class="col-lg-4">Lorem ipsum dolor sit</div>
-                    <div class="col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione deleniti libero molestias optio repudiandae </div>
-                    <div class="col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione deleniti libero molestias optio repudiandae </div>
+                    <div class="col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione
+                        deleniti libero molestias optio repudiandae </div>
+                    <div class="col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione
+                        deleniti libero molestias optio repudiandae </div>
                 </div>
 
                 <h3>Row - Cols</h3>
                 <div class="row row-cols-1 row-cols-lg-6 gy-4">
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium, sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis unde accusantium,
+                        sunt nesciunt fugiat quidem delectus officiis explicabo voluptatum hic.</div>
+                </div>
+
+                <h3>Gap</h3>
+                <div class="row">
+                    <div class="col ">
+                        <div class="bg-warning p-3 h-100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Laborum, explicabo.</div>
+                    </div>
+                    <div class="col ">
+                        <div class="bg-warning p-3 h-100">Nesciunt velit possimus recusandae maiores molestiae quam
+                            voluptatum, sapiente quas.</div>
+                    </div>
+                    <div class="col ">
+                        <div class="bg-warning p-3 h-100">Nostrum facere corrupti sint debitis error perspiciatis,
+                            temporibus cupiditate assumenda.</div>
+                    </div>
+                    <div class="col ">
+                        <div class="bg-warning p-3 h-100">Atque, eaque consequatur! Recusandae officiis voluptatum
+                            nesciunt perferendis. Quaerat, optio!</div>
+                    </div>
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <h2>CSS Grid</h2>
+                <div class="grid">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Images</h2>
+                <h3>Responsive Image (.img-fluid)</h3>
+                <img class="img-fluid" src="./images/mlp-futuristic-robot-artificial-intelligence-concept.jpg"
+                    alt="mlp futuristic robot artificial intelligence concept image">
+
+                <h3>Thumbnail (.img-thumbnail)</h3>
+                <div class="col-6">
+                    <img class="img-thumbnail" src="./images/mlp-futuristic-robot-artificial-intelligence-concept.jpg"
+                        alt="mlp futuristic robot artificial intelligence concept image">
+                </div>
+                <div class="col-6">
+                    <img width="100" class="img-fluid d-block ms-auto"
+                        src="./images/mlp-futuristic-robot-artificial-intelligence-concept.jpg"
+                        alt="mlp futuristic robot artificial intelligence concept image">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Table</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Borderless Table</h3>
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Table Varients</h3>
+                <table class="table table-success">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Striprd Tables</h3>
+                <table class="table table-striped-columns">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Hoverable Rows</h3>
+                <table class="table table-bordered table-primary border-danger table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Small Tables</h3>
+                <table class="table table-sm table-bordered table-primary border-danger table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Group Devider</h3>
+                <table class="table table-bordered table-primary border-danger table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Verticle Alignment</h3>
+                <table class="table align-bottom table-bordered table-primary border-danger table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>heading 1</th>
+                            <th>heading 2</th>
+                            <th>heading 3</th>
+                            <th>heading 4</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>data 1 </td>
+                            <td>data 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloremque
+                                commodi eum exercitationem reprehenderit sequi iste tempora repudiandae voluptates illo.
+                            </td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                        <tr>
+                            <td>data 1</td>
+                            <td>data 2</td>
+                            <td>data 3</td>
+                            <td>data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Responsive Table</h3>
+                <div class="table-responsive">
+                    <table
+                        class="table align-bottom table-bordered table-primary border-danger table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>heading 1</th>
+                                <th>heading 2</th>
+                                <th>heading 3</th>
+                                <th>heading 4</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>data 1 </td>
+                                <td>data 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloremque
+                                    commodi eum exercitationem reprehenderit sequi iste tempora repudiandae voluptates
+                                    illo.</td>
+                                <td>data 3</td>
+                                <td>data 4</td>
+                            </tr>
+                            <tr>
+                                <td>data 1</td>
+                                <td>data 2</td>
+                                <td>data 3</td>
+                                <td>data 4</td>
+                            </tr>
+                            <tr>
+                                <td>data 1</td>
+                                <td>data 2</td>
+                                <td>data 3</td>
+                                <td>data 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Utilities</h2>
+                <h3>Background</h3>
+                <div class="box bg-primary text-white">.bg-primary</div>
+                <div class="box bg-primary-subtle">.bg-primary-subtle</div>
+                <div class="box bg-danger text-white">.bg-danger</div>
+                <div class="box bg-danger-subtle">.bg-danger-subtle</div>
+                <div class="box bg-success text-white">.bg-success</div>
+                <div class="box bg-success-subtle">.bg-success-subtle</div>
+                <div class="box bg-dark bg-opacity-75 text-white">.bg-dark</div>
+                <div class="box bg-dark-subtle">.bg-dark-subtle</div>
+                <div class="box bg-primary bg-gradient text-white">.bg-primary.bg-gradient</div>
+                <div class="box bg-primary-subtle bg-gradient">.bg-primary-subtle.bg-gradient</div>
+
+                <h3>Border</h3>
+                <div class="box border">
+                    .border
+                </div>
+                <div class="box border border-danger">
+                    .border
+                </div>
+                <div class="box border border-success border-2">
+                    .border
+                </div>
+                <div class="box border border-success border-2 border-end-0">
+                    .border
+                </div>
+                <div class="box border-bottom border-start border-4">
+                    .border
+                </div>
+                <h4>Border Radius</h4>
+                <div class="row gy-4 row-cols-lg-4 row-cols-sm-3 row-cols-2">
+                    <div class="col">
+                        <div class="ratio ratio-1x1 bg-light border rounded"></div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-1x1 bg-light border rounded-0"></div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-1x1 bg-light border rounded-5"></div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-1x1 bg-light border rounded-end-5"></div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-1x1 bg-light border rounded-circle"></div>
+                    </div>
+                    <div class="col">
+                        <div class="box bg-light border rounded-pill"></div>
+                    </div>
+                </div>
+
+                <h3>Color</h3>
+                <p class="text-primary">.text-primary</p>
+                <p class="text-primary-emphasis">.text-primary-emphasis</p>
+
+                <h3>Display</h3>
+                <div class="d-lg-flex">
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                    <div class="sized-box border"></div>
+                </div>
+
+                <h3>Flex (d-flex)</h3>
+                <div
+                    class="box border border-danger border-3 p-2 d-inline-flex gap-4 align-items-center justify-content-evenly">
+                    Lorem ipsum dolor sit amet consectetur <span>adipisicing elit. Velit, totam?</span>
+                </div>
+
+                <h3>Float</h3>
+                <div class="">
+                    <div class="sized-box bg-black float-lg-end"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis repellendus ab quasi
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati expedita necessitatibus
+                    dignissimos eos alias ducimus aut aperiam voluptate nesciunt?</p>
+
+                <h3>interactions</h3>
+                <h4>Pointer Events</h4>
+                <a href="//google.com" target="_blank" class="pe-none" tabindex="-1" aria-disabled="true">Go to
+                    google</a>
+                <h3>Overflow</h3>
+                <div class="sized-box border border-danger overflow-hidden ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed minima tenetur repudiandae
+                    explicabo a perspiciatis optio accusamus voluptas est exercitationem quam corrupti perferendis
+                    deserunt atque nulla sint aliquid, enim ipsam eius illum rerum soluta? In nobis suscipit temporibus,
+                    fuga voluptatem exercitationem cumque, illum mollitia molestias dolorum, possimus laudantium quas.
+                </div>
+                <div class="sized-box border border-danger overflow-y-scroll mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="sized-box border border-danger overflow-auto mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+
+                <h3>Position</h3>
+                <div class="box-container position-relative border border-danger bg-danger-subtle">
+                    <div class="square-box position-absolute top-0 start-0 translate-middle"></div>
+                    <div class="square-box position-absolute top-0 start-50  translate-middle"></div>
+                    <div class="square-box position-absolute top-0 start-100  translate-middle"></div>
+                    <div class="square-box position-absolute top-50 start-0  translate-middle"></div>
+                    <div class="square-box position-absolute top-50 start-50 translate-middle"></div>
+                    <div class="square-box position-absolute top-50 start-100  translate-middle"></div>
+                    <div class="square-box position-absolute top-100 start-0  translate-middle"></div>
+                    <div class="square-box position-absolute top-100 start-50  translate-middle"></div>
+                    <div class="square-box position-absolute top-100 start-100  translate-middle"></div>
+                </div>
+                <div class="box-container position-relative mt-5 border border-danger bg-danger-subtle">
+                    <div class="square-box position-absolute top-0 start-0"></div>
+                    <div class="square-box position-absolute top-0 start-50 translate-middle-x"></div>
+                    <div class="square-box position-absolute top-0 end-0 "></div>
+                    <div class="square-box position-absolute top-50 start-0 translate-middle-y "></div>
+                    <div class="square-box position-absolute top-50 start-50 translate-middle"></div>
+                    <div class="square-box position-absolute top-50 end-0 translate-middle-y "></div>
+                    <div class="square-box position-absolute bottom-0 start-0 "></div>
+                    <div class="square-box position-absolute bottom-0 start-50 translate-middle-x"></div>
+                    <div class="square-box position-absolute bottom-0 end-0 "></div>
+                </div>
+
+                <h3>Size</h3>
+
+                <div class="sized-box border border-danger w-100">
+                    <div class="square-box w-25 h-50 float-start">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Adipisci, quam.</div>
+                    <div class="square-box w-25  h-25 float-start overflow-auto">Lorem ipsum dolor sit amet Lorem ipsum
+                        dolor sit amet consectetur.</div>
+                    <div class="square-box w-25  h-75 float-start"></div>
+                    <div class="square-box w-25  h-100 float-start"></div>
+                    <div class="square-box h-auto float-start"></div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <h3>Spacing</h3>
+                <div class="sized-box box-container m-3 m-lg-4 p-3 p-lg-4 border border-danger overflow-auto">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing.
+                </div>
+                <h3>Text</h3>
+                <h4>Text Alignment</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ut unde hic veniam neque natus qui cum
+                    saepe? Aut, doloribus qui. Doloribus reiciendis temporibus recusandae alias consectetur voluptates
+                    inventore, laudantium harum atque velit nisi expedita tempora vero eveniet nostrum deserunt quod
+                    quis eius praesentium! Fugiat reprehenderit consequatur ipsa inventore accusamus.</p>
+                <p class="text-end">Fuga possimus veniam natus est ex ab provident libero, porro sed necessitatibus
+                    minus in deleniti, illum sunt. Modi ea architecto laudantium, eos nemo eaque suscipit porro
+                    laboriosam aliquid facere provident inventore facilis vel. Dolorem, magni suscipit, laboriosam sint
+                    sed modi minima ab, sunt nulla harum accusantium veniam eum nihil doloribus!</p>
+                <p class="text-center">Qui ratione eaque minus aliquam est architecto vel quisquam nihil.
+                    Necessitatibus, sint consectetur quos vitae dolorum aliquam incidunt labore iste inventore eveniet
+                    recusandae consequuntur libero qui facilis velit, impedit consequatur aliquid temporibus
+                    perspiciatis ex error, voluptatum ratione. Sequi quaerat voluptatibus cupiditate iste quia porro
+                    temporibus totam animi, tempora soluta veritatis!</p>
+                <p class="text-center text-lg-start">Quia, omnis laborum aliquam illum ullam nihil voluptatum eius error
+                    unde amet cupiditate totam ad consectetur esse quam id. Dolorum repudiandae sunt voluptates pariatur
+                    nam repellat nisi esse soluta incidunt, saepe, non labore aspernatur, iure sed? Deleniti, ex
+                    possimus delectus maxime incidunt ratione eaque dolore ullam repellendus, cupiditate illo a.</p>
+                <p>Quisquam dolor nesciunt consequuntur beatae ipsam! Eveniet nesciunt eum totam. Aspernatur
+                    voluptatibus autem, corrupti asperiores officiis temporibus architecto quia similique nobis odit
+                    ratione qui beatae eveniet incidunt dolores accusantium voluptatum culpa? Eum quidem unde
+                    necessitatibus molestiae, exercitationem sunt, at culpa qui illum sit nam explicabo quasi eius
+                    aliquam! Exercitationem, commodi.</p>
+
+
+                <h4 class="mt-4">text wrap</h4>
+                <div class="sized-box border border-danger text-nowrap">
+                    Lorem ipsum dolor sit amet consectetur
+                </div>
+                <h4 class="mt-4">Word Break</h4>
+                <div class="sized-box border border-danger text-break">
+                    Lorem ipsumdolorsitametconsectetur
+                </div>
+
+                <div class="sized-box text-bg-danger">
+                    <p class="text-reset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fugiat!</p>
+                </div>
+
+                <h3>Verticle Align</h3>
+
+                <p>This is a <small class="align-text-top">paragraph</small></p>
+
+                <h3>Visibility</h3>
+
+                <div class="sized-box invisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                    nostrum! <a href="#">some text</a></div>
+                <div class="sized-box d-none">Suscipit quisquam eos laboriosam fugit reprehenderit. Quis beatae
+                    consectetur quidem! <a href="#">some text</a></div>
+            </div>
+
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>HTML Form</h2>
+                        <form action="#" method="get" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Full Name<span
+                                        class="mandatory text-danger">*</span></label>
+                                <input class="form-control" id="name" required autofocus type="text"
+                                    pattern="[a-zA-Z\s]+" minlength="3" maxlength="40" name="name"
+                                    placeholder="John Doe">
+                                <div class="invalid-feedback">Name is required and must have atleast 3 Characters</div>
+                                <div class="valid-feedback">Name looks good</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email<span class="mandatory">*</span></label>
+                                <input class="form-control" type="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required name="email"
+                                    placeholder="username@domain.com">
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <input class="form-control" type="text" minlength="10"
+                                    pattern="^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$" name="mob" placeholder="Mobile No">
+                                <label class="form-label">Mobile No</label>
+                            </div>
+                            <div class="row gy-3 mb-3">
+                                <div class="col-lg-6 ">
+                                    <label class="form-label">Weight</label>
+                                    <input class="form-control form-control-lg" type="number" name="weight"
+                                        value="40.64" placeholder="Enter your Weight">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class="form-label">DOB<span class="mandatory">*</span></label>
+                                    <input class="form-control form-control-sm" type="date" min="2004-10-01"
+                                        max="2007-10-01" required name="dob" placeholder="Enter your DOB">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label d-block">Gender<span class="mandatory">*</span></label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" value="male" id="male"
+                                        required>
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="gender" value="female"
+                                        id="female" required>
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" value="others"
+                                        id="others" required>
+                                    <label class="form-check-label" for="others">Others</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label d-block">Skills</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="skills" value="c" id="c">
+                                    <label class="form-check-label" for="c">C</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="skills" value="python"
+                                        id="python">
+                                    <label class="form-check-label" for="python">Python</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="skills" value="HTML"
+                                        id="html">
+                                    <label class="form-check-label" for="html">HTML</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="skills" value="bootstrap"
+                                        id="bs">
+                                    <label class="form-check-label" for="bs">Bootstrap</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">City</label>
+                                <select name="city" class="form-select">
+                                    <option value="" selected disabled>Select City</option>
+                                    <option value="Gurugram">Gurugram</option>
+                                    <option value="Motihari">Motihari</option>
+                                    <option value="Jodhpur">Jodhpur</option>
+                                    <option value="Aligarh">Aligarh</option>
+                                    <option value="Bageshwar">Bageshwar</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Introduce Yourself</label>
+                                <textarea class="form-control" minlength="40" name="introduction" rows="6"
+                                    cols="40"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Favourite Color</label>
+                                <input class="form-control form-control-color" type="color" name="favouriteColor">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Attach Resume</label>
+                                <input class="form-control" type="file" name="resume">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password<span class="mandatory">*</span></label>
+                                <div class="input-group">
+                                    <span class="btn btn-secondary"><i class="bi bi-key"></i></span>
+                                    <input class="form-control" type="password" required name="password"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
+                            <button type="button">Aanand</button>
+                            <p><strong>Note:</strong> Fields marked with <span class="mandatory">*</span> can not be
+                                left empty</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <h2>Components</h2>
+                <h3>Accordion</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h4>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item’s accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It’s also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h4>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item’s accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It’s also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Accordion Item #3
+                            </button>
+                        </h4>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam mollitia sint sequi aspernatur fuga dolore illo quisquam quod, optio libero cumque aliquam suscipit nostrum repellendus eos rem dicta ipsa, obcaecati excepturi maxime non numquam itaque! Nisi autem enim perferendis quod?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Always Open</h4>
+                <div class="accordion accordion-flush" id="accordionExample1">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                Accordion Item #1
+                            </button>
+                        </h4>
+                        <div id="collapse4" class="accordion-collapse collapse show"
+                            >
+                            <div class="accordion-body">
+                                <strong>This is the first item’s accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It’s also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Accordion Item #2
+                            </button>
+                        </h4>
+                        <div id="collapse5" class="accordion-collapse collapse" >
+                            <div class="accordion-body">
+                                <strong>This is the second item’s accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It’s also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                Accordion Item #3
+                            </button>
+                        </h4>
+                        <div id="collapse6" class="accordion-collapse collapse" >
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam mollitia sint sequi aspernatur fuga dolore illo quisquam quod, optio libero cumque aliquam suscipit nostrum repellendus eos rem dicta ipsa, obcaecati excepturi maxime non numquam itaque! Nisi autem enim perferendis quod?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mt-5">Alert</h3>
+                <div class="alert alert-danger">
+                    Your error message here
+                </div>
+                <div class="alert alert-success d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" width="16" role="img" aria-label="Warning:">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    Your success message here
+                </div>
+                <div class="alert alert-success alert-dismissible d-flex align-items-center fade show">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" width="16" role="img" aria-label="Warning:">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    Your success message here
+                    <button type="button" class="btn-close ms-auto" aria-label="Close" data-bs-dismiss="alert"></button>
+                </div>
+
+                <h3 class="mt-4">Badges</h3>
+                <a href="#" class="btn btn-danger text-decoration-none position-relative d-inline-block">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                    </svg>
+                    <span class="badge text-bg-primary rounded-pill position-absolute start-100 top-0 translate-middle">12</span>
+                </a>
+
+                <h3 class="mt-4">Breadcrumb</h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="about.html">About</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Team</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
     </main>
+
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
+
 </html>

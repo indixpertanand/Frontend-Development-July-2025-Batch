@@ -1,1 +1,33 @@
+
+// @import "bootstrap/scss/variables";
+// @import "bootstrap/scss/functions";
 @import "bootstrap/scss/bootstrap";
+
+
+.box{
+    height: 80px
+}
+
+.sized-box{
+    width: 200px;
+    height: 100px;
+}
+
+.square-box{
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: white;
+}
+
+.box-container{
+    height: 300px;
+}
+
+p{
+    color: $body-color;
+}
+
+a .badge{
+    font-size: .625em;
+}
