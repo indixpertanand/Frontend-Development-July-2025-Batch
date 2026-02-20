@@ -1,0 +1,23 @@
+
+@import 'bootstrap/scss/functions';
+
+@import './variables';
+
+
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+
+
+
+$container-max-widths: map-merge($map1: $container-max-widths, $map2: $custom-container-width);
+
+
+// Override Maps here
+
+
+// @import 'bootstrap/scss/maps';
+
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+@import './custom'

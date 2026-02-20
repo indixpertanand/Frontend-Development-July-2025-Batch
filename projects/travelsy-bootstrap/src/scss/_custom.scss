@@ -1,0 +1,77 @@
+.bg-gradient1{
+    background-image: linear-gradient(120deg, #{$primary} 50%, $dark 50%);
+    color: #fff;
+}
+.bg-gradient2{
+    background-image: linear-gradient(to bottom, #{tint-color($primary, 90%)}, transparent);
+}
+
+a{
+    color: inherit;
+}
+
+.icon{
+    --size: #{$icon-size};
+    padding: 0;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    color: var(#{--bs-btn-color}, inherit);
+    display: grid;
+    place-items: center;
+    &:hover{
+       background: #{$primary};
+       color: $white; 
+    }
+
+}
+.icon-sm{
+     --size: #{$icon-size-sm};
+     i{
+        font-size: 14px;
+     }
+}
+.icon-lg{
+     --size: #{$icon-size-lg};
+}
+
+.btn-white{
+    --bs-btn-color: #{$primary};
+    --bs-btn-bg: #{$white};
+    --bs-btn-border-color: #{$white};
+    --bs-btn-hover-color: #{$white};
+    --bs-btn-hover-bg: #{$primary};
+    --bs-btn-hover-border-color: #{$primary};
+    --bs-btn-focus-shadow-rgb: 60, 123, 206;
+    --bs-btn-active-color: #{$white};
+    --bs-btn-active-bg: rgb(107, 167, 244.6);
+    --bs-btn-active-border-color: rgb(88.5, 156, 243.3);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#{$white};
+    --bs-btn-disabled-bg: #{$white};
+    --bs-btn-disabled-border-color: #{$white};
+}
+
+.btn-primary{
+    --bs-btn-color: #{$white};
+    --bs-btn-hover-color: #{$white};
+    --bs-btn-active-color: #{$white};
+    --bs-btn-hover-bg: #{$dark};
+}
+
+// Spacing
+
+.section-py{
+    padding-block: var(--padding-y);
+}
+.section-pt{
+    padding-top: var(--padding-y);
+}
+.section-pb{
+    padding-bottom: var(--padding-y);
+}
+:root{
+    --padding-y: #{$section-padding};
+}
+
+@import './header'
