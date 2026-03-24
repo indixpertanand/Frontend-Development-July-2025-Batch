@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let arr1 = [1, 2, 3, 4, 5, 6, 7];
+        let arr2 = Array.from(arr1, a => a * 2);
+
+        let newArr1 = arr2.push(2, 3, 11, 13, 15)
+        console.log(newArr1, arr2) // [2, 4, 6, 8, 10, 12, 14, 2, 3, 11, 13]
+
+        let newArr2 = arr2.pop()
+        console.log(newArr2, arr2) // [2, 4, 6, 8, 10, 12, 14, 2, 3, 11]
+
+        let updatedArr2 =  arr2.unshift("Anand", "Ashwani", "Khushi")
+        console.log(updatedArr2, arr2)
+
+        let updatedArr3 = arr2.shift();
+        console.log(updatedArr3, arr2) //["Ashwani", "Khushi", 2, 4, 6, 8, 10, 12, 14, 2, 3, 11]
+
+        // Splice Method
+        newArr1 = arr2.splice(2, 0, "Yamini", "Aditya", "Rohit");
+        console.log(arr2, newArr1) //["Ashwani", "Khushi", "Yamini", "Aditya", "Rohit", 2, 4, 6, 8, 10, 12, 14, 2, 3, 11]
+
+        let extractedArr = arr2.slice(1, 5);
+        console.log(arr2)
+        console.log(extractedArr) // ["Khushi", "Yamini", "Aditya", "Rohit"]
+        let mergedArr = extractedArr.concat(arr1) // will return new array containing values of both array
+        console.log(extractedArr)
+        console.log(arr1)
+        console.log(mergedArr)
+
+        let extractedString = extractedArr.join(" | ");
+        console.log(extractedString);
+
+        console.log(extractedArr.includes("Yamini"))
+
+        let newarr = extractedArr.with(1, "Ashwani"); // Will replace Yamini with Ashwani and return new array
+        console.log(newarr, extractedArr)
+        //let newarr1 = extractedArr.with(4, "Ashwani"); // Will generate error as index 4 in not defined
+
+        const greet = function(val, i){
+            console.log(`${i+1} Hello ${val}`)
+        }
+
+        // forEach method
+        let return1 = newarr.forEach(greet)
+        console.log(return1)
+        // For Of Method
+
+        for(name of newarr){
+            console.log(name)
+        }
+
+        // Map Function
+
+        let newarr1 = newarr.map((val)=> `${val}`.toLocaleUpperCase('tr'))
+        let newarr2 = newarr.map((val)=> `${val}`.toUpperCase('tr'))
+        console.log(newarr1, newarr2)
+
+        // Filter 
+        let filteredArr =  arr2.filter( v =>{ 
+        return ((v % 2) != 0 && typeof v == 'number')
+    })
+        console.log(arr2)
+        console.log(filteredArr)
+
+    // Reduce Method
+    console.log(arr2)
+    let sum = arr2.reduce((acc, currentval)=>{
+       
+        if(typeof currentval == 'number') {
+            // console.log(acc)
+            acc += currentval;
+        }
+        console.log(acc)
+        return acc
+
+    }, 0);
+
+    console.log(sum)
+    console.log(arr2.reverse())
+
+    let names = ["Anand", "Koushal", "Suman", "Ashwani", "Aditya", "Rohit", "Yamini"]
+
+    names.sort();
+    console.log(names)
+    arr2.sort((a, b)=> a - b);
+    console.log(arr2)
+    console.log(arr2.indexOf("Ashwanii"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+    </head>
+    <body>
+        <button onblur="console.log('focus moved')">Click Me</button>
+
+        <script >
+            console.log("Page loaded");
+            document.querySelector('button').addEventListener('click', function(){
+                alert('button clicked')
+            })
+        </script>
+    </body>
+</html>

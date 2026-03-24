@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number & Date Functions</title>
+</head>
+<body>
+    <h1>Number & Date Functions</h1>
+    <script>
+        let age = 25;
+        let avg = 64.5
+        let num = 999999999999999;
+        let largeNum = 999999999999999999999999999n
+        console.log(largeNum)
+        console.log((20 / 6).toFixed(2))
+
+        // let userInput1 = prompt("Enter a number");
+        // console.log(parseInt(userInput1))
+        // if(!isNaN(userInput1)){
+            
+        //     // ParseInt
+        //     console.log(parseInt(userInput1) + 1)
+        //     // ParseFloat
+        //     console.log(parseFloat(userInput1) + 1)
+        // }else{
+        //     console.log("You've entered an string")
+        // }
+
+        let now = new Date()
+        console.log(now)
+        let newDate = new Date(0)
+        console.log(newDate)
+        let datestr = "2026-03-30"
+        
+        let newDate2 = new Date(datestr)
+        console.log(newDate2 - now)
+
+        // Get Full Year
+        console.log(now.getFullYear())
+        console.log(newDate.getFullYear())
+        // Get Month in 0 based index
+        console.log(now.getMonth() + 1)
+        // Get Date
+        console.log(now.getDate())
+
+        // Get Day in 0 - 6 index format
+        console.log(now.getDay())
+
+        // Get Hours in 24h format
+        console.log(now.getHours())
+        console.log(now.getMinutes())
+        console.log(now.getSeconds())
+        console.log(now.getMilliseconds())
+
+        console.log(now.getTime())
+
+        console.log(now.setFullYear(2030))
+        console.log(now.setDate(now.getDate() + 20))
+        console.log(now)
+    </script>
+</body>
+</html>

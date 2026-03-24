@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Great+Vibes&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script type="module" src="./js/main.js"></script>
 </head>
 
@@ -48,7 +49,7 @@
         </div>
         <nav class="navbar bg-white navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#" aria-label="Go to home page"><img src="./images/logo.svg" alt="travelsy logo"></a>
+                <a class="navbar-brand" href="index.html" aria-label="Go to home page"><img src="./images/logo.svg" alt="travelsy logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +84,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero-banner section-py">
+        <section class="hero-banner map-bg section-py">
             <div class="container">
                 <div class="row align-items-center gy-4 gy-lg-0">
                     <div class="col-lg-6 position-relative order-lg-2">
@@ -171,6 +172,367 @@
                 </div>
             </div>
 
+        </section>
+        <section class="section-py top-destinations bg-gradient2">
+            <div class="container">
+                <div class="section-heading mb-4 mb-lg-5 text-lg-center">
+                    <span class="h4 heading-top text-primary">Top Destinations</span>
+                    <h2 class="">Popular Hotels For Booking</h2>
+                </div>
+                <div class="swiper destinationSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card text-start rounded-4 p-2 position-relative">
+                                <img class="card-img-top rounded-2" src="./images/destination-1.jpg" alt="destination-1" />
+                                <div class="card-body p-1">
+                                    <h3 class="h4 fw-medium mt-3 mb-2 mb-3">Some Amazing Title Here</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <ul class="list-inline mb-3">
+                                        <li class="list-inline-item text-dark d-inline-flex align-items-center gap-1">
+                                            <i class="fa-solid fa-location-dot text-primary"></i>
+                                            Museums
+                                        </li>
+                                        <li class="list-inline-item d-inline-flex text-dark align-items-center gap-1">
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            12 Person Capacity
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center gap-1 justify-content-between">
+                                        <div class="price">
+                                            <span class="h3">$150/</span>Per Night
+                                        </div>
+                                        <a href="#" class="btn btn-primary icon rounded-circle stretched-link"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-start rounded-4 p-2 position-relative">
+                                <img class="card-img-top rounded-2" src="./images/destination-2.jpg" alt="destination-1" />
+                                <div class="card-body p-1">
+                                    <h3 class="h4 fw-medium mt-3 mb-2 mb-3">Some Amazing Title Here</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <ul class="list-inline mb-3">
+                                        <li class="list-inline-item text-dark d-inline-flex align-items-center gap-1">
+                                            <i class="fa-solid fa-location-dot text-primary"></i>
+                                            Museums
+                                        </li>
+                                        <li class="list-inline-item d-inline-flex text-dark align-items-center gap-1">
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            12 Person Capacity
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center gap-1 justify-content-between">
+                                        <div class="price">
+                                            <span class="h3">$150/</span>Per Night
+                                        </div>
+                                        <a href="#" class="btn btn-primary icon rounded-circle stretched-link"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-start rounded-4 p-2 position-relative">
+                                <img class="card-img-top rounded-2" src="./images/destination-3.jpg" alt="destination-1" />
+                                <div class="card-body p-1">
+                                    <h3 class="h4 fw-medium mt-3 mb-2 mb-3">Some Amazing Title Here</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <ul class="list-inline mb-3">
+                                        <li class="list-inline-item text-dark d-inline-flex align-items-center gap-1">
+                                            <i class="fa-solid fa-location-dot text-primary"></i>
+                                            Museums
+                                        </li>
+                                        <li class="list-inline-item d-inline-flex text-dark align-items-center gap-1">
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            12 Person Capacity
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center gap-1 justify-content-between">
+                                        <div class="price">
+                                            <span class="h3">$150/</span>Per Night
+                                        </div>
+                                        <a href="#" class="btn btn-primary icon rounded-circle stretched-link"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-start rounded-4 p-2 position-relative">
+                                <img class="card-img-top rounded-2" src="./images/destination-1.jpg" alt="destination-1" />
+                                <div class="card-body p-1">
+                                    <h3 class="h4 fw-medium mt-3 mb-2 mb-3">Some Amazing Title Here</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <ul class="list-inline mb-3">
+                                        <li class="list-inline-item text-dark d-inline-flex align-items-center gap-1">
+                                            <i class="fa-solid fa-location-dot text-primary"></i>
+                                            Museums
+                                        </li>
+                                        <li class="list-inline-item d-inline-flex text-dark align-items-center gap-1">
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            12 Person Capacity
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center gap-1 justify-content-between">
+                                        <div class="price">
+                                            <span class="h3">$150/</span>Per Night
+                                        </div>
+                                        <a href="#" class="btn btn-primary icon rounded-circle stretched-link"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-start rounded-4 p-2 position-relative">
+                                <img class="card-img-top rounded-2" src="./images/destination-2.jpg" alt="destination-1" />
+                                <div class="card-body p-1">
+                                    <h3 class="h4 fw-medium mt-3 mb-2 mb-3">Some Amazing Title Here</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <ul class="list-inline mb-3">
+                                        <li class="list-inline-item text-dark d-inline-flex align-items-center gap-1">
+                                            <i class="fa-solid fa-location-dot text-primary"></i>
+                                            Museums
+                                        </li>
+                                        <li class="list-inline-item d-inline-flex text-dark align-items-center gap-1">
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            12 Person Capacity
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center gap-1 justify-content-between">
+                                        <div class="price">
+                                            <span class="h3">$150/</span>Per Night
+                                        </div>
+                                        <a href="#" class="btn btn-primary icon rounded-circle stretched-link"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-start rounded-4 p-2 position-relative">
+                                <img class="card-img-top rounded-2" src="./images/destination-3.jpg" alt="destination-1" />
+                                <div class="card-body p-1">
+                                    <h3 class="h4 fw-medium mt-3 mb-2 mb-3">Some Amazing Title Here</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, alina adipisci elite. Egestas elementum enim netus amet turpis lectus.</p>
+                                    <ul class="list-inline mb-3">
+                                        <li class="list-inline-item text-dark d-inline-flex align-items-center gap-1">
+                                            <i class="fa-solid fa-location-dot text-primary"></i>
+                                            Museums
+                                        </li>
+                                        <li class="list-inline-item d-inline-flex text-dark align-items-center gap-1">
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            12 Person Capacity
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center gap-1 justify-content-between">
+                                        <div class="price">
+                                            <span class="h3">$150/</span>Per Night
+                                        </div>
+                                        <a href="#" class="btn btn-primary icon rounded-circle stretched-link"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-buttons btn-group d-flex w-max-content mt-4 mt-lg-5 shadow-sm justify-content-center mx-auto">
+                    <div class="destination-prev1 btn btn-white px-3 py-2"><i class="fa fa-arrow-left"></i></div>
+                    <div class="destination-next1 btn btn-white px-3 py-2"><i class="fa fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </section>
+        <section class="statsistics map-bg section-py position-relative">
+            <div class="decorator decorator-right position-absolute top-0 end-0">&nbsp;</div>
+            <div class="container">
+                <div class="row gy-3 gy-lg-0">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card shadow rounded-4 border-0">
+                            <div class="card-body text-center">
+                                <div class="icon icon-lg mb-3 mx-auto bg-primary text-white">
+                                    <img src="./images/hotel-icon.svg" class="img-fluid" alt="hotel icon">
+                                </div>
+                                <div class="stat-count h2 mb-0"><span>1000</span>+</div>
+                                <p>Hotel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card shadow rounded-4 border-0">
+                            <div class="card-body text-center">
+                                <div class="icon icon-lg mb-3 mx-auto bg-primary text-white">
+                                    <img src="./images/hotel-icon.svg" class="img-fluid" alt="hotel icon">
+                                </div>
+                                <div class="stat-count h2 mb-0"><span>1000</span>+</div>
+                                <p>Hotel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card shadow rounded-4 border-0">
+                            <div class="card-body text-center">
+                                <div class="icon icon-lg mb-3 mx-auto bg-primary text-white">
+                                    <img src="./images/hotel-icon.svg" class="img-fluid" alt="hotel icon">
+                                </div>
+                                <div class="stat-count h2 mb-0"><span>1000</span>+</div>
+                                <p>Hotel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card shadow rounded-4 border-0">
+                            <div class="card-body text-center">
+                                <div class="icon icon-lg mb-3 mx-auto bg-primary text-white">
+                                    <img src="./images/hotel-icon.svg" class="img-fluid" alt="hotel icon">
+                                </div>
+                                <div class="stat-count h2 mb-0"><span>1000</span>+</div>
+                                <p>Hotel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best-places section-py bg-gradient2">
+            <div class="container">
+                <div class="section-heading mb-4 mb-lg-5 text-lg-center">
+                    <span class="h4 heading-top text-primary">Best Places For Your Party</span>
+                    <h2 class="">Place That Accommodates Your Guest</h2>
+                </div>
+            </div>
+            <div class="container container-max ms-auto me-0 pe-0">
+                <div class="swiper placesSwiper rounded-start-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-1.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Wedding</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-2.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Birthday</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-3.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Corporate</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-4.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Baby Shower</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-1.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Wedding</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-2.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Birthday</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-3.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Corporate</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 position-relative">
+                                <img src="./images/best-places-4.jpg" class="card-img-top" alt="best places">
+                                <div class="bg-dark card-content d-flex align-items-end p-3 p-lg-4 position-absolute top-0 start-0 w-100 h-100">
+                                    <h3 class="mb-0"><a href="#" class="text-white stretched-link">Baby Shower</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-buttons btn-group d-flex w-max-content mt-4 mt-lg-5 shadow-sm justify-content-center mx-auto">
+                    <div class="places-prev1 btn btn-white px-3 py-2"><i class="fa fa-arrow-left"></i></div>
+                    <div class="places-next1 btn btn-white px-3 py-2"><i class="fa fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials position-relative section-pb">
+            <div class="decorator decorator-right position-absolute top-0 end-0">&nbsp;</div>
+            <div class="container">
+                <div class="section-heading mb-4 mb-lg-5 text-lg-center">
+                    <span class="h4 heading-top text-primary">Testimonials</span>
+                    <h2 class="">What Our Traveler Say’s</h2>
+                </div>
+                <div class="testimonials-wrapper row gy-4 gy-lg-0 position-relative">
+                    <div class="testimonials-images col-lg-7 align-items-end d-flex gap-1">
+                        <div class="testimonials-image" role="button" data-bs-toggle="collapse" data-bs-target="#testimonials1">
+                            <img src="./images/testimonials-1.jpg" class="img-fluid w-100 rounded-4" alt="">
+                        </div>
+                        <div class="testimonials-image collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#testimonials2">
+                            <img src="./images/testimonials-2.jpg" class="img-fluid w-100 rounded-4" alt="">
+                        </div>
+                        <div class="testimonials-image collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#testimonials3">
+                            <img src="./images/testimonials-3.jpg" class="img-fluid w-100 rounded-4" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials-contents col-lg-5">
+                        <div class="testimonials-content h-100 collapse fade show" id="testimonials1" data-bs-parent=".testimonials-wrapper">
+                            <div class="testimonial-body d-flex h-100 flex-column">
+                                    
+                                <div class="testimonial-header">
+                                    <h3>Tommy Murphy</h3>
+                                    <p>Global Directives Architect</p>
+                                </div>
+                                <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
+                                <a href="#" class="btn btn-primary mt-auto icon mt-auto"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="testimonials-content h-100 collapse  fade" id="testimonials2" data-bs-parent=".testimonials-wrapper">
+                            <div class="testimonial-body h-100 d-flex flex-column">
+                                    
+                                <div class="testimonial-header">
+                                    <h3>Tommy Murphy</h3>
+                                    <p>Global Directives Architect</p>
+                                </div>
+                                <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
+                                <a href="#" class="btn mt-auto btn-primary icon mt-auto"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="testimonials-content h-100 collapse fade" id="testimonials3" data-bs-parent=".testimonials-wrapper">
+                            <div class="testimonial-body h-100 d-flex flex-column">
+                                    
+                                <div class="testimonial-header">
+                                    <h3>Tommy Murphy</h3>
+                                    <p>Global Directives Architect</p>
+                                </div>
+                                <p>Donec adipiscing tristique risus nec feugiat in. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Aenean euismod elementum nisi quis eleifend. Sit amet facilisis magna etiam tempor orci. Vitae et leo duis ut. Arcu cursus vitae congue mauris.</p>
+                                <a href="#" class="btn mt-auto btn-primary icon mt-auto"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -276,6 +638,49 @@
             </div>
         </section>
     </footer>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".destinationSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 15,      
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      },
+      navigation: {
+        nextEl: ".destination-next1",
+        prevEl: ".destination-prev1",
+      },
+    });
+    var placesSwiper = new Swiper(".placesSwiper", {
+      slidesPerView: 1.1,
+      spaceBetween: 0,      
+      breakpoints: {
+        640: {
+          slidesPerView: 2.2,
+        },
+        992: {
+          slidesPerView: 3.4,
+        }
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".places-next1",
+        prevEl: ".places-prev1",
+      },
+      
+    });
+  </script>
 </body>
 
 </html>

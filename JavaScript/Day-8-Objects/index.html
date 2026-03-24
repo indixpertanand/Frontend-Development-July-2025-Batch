@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object</title>
+</head>
+<body>
+    <header><h1>Javascript Object</h1></header>
+    
+    <script>
+
+        let phone = {
+            manufacturer : "Samsung",
+            "model-name": "S25",
+            varients:[
+                {
+                    varientName: "FE",
+                    price: 48000,
+                    colorOptions:[
+                        {
+                            color: "black",
+                            price: 48000
+                        },
+                        {
+                            color: "blue",
+                            price: 52000
+                        },
+                        {
+                            color: "Sea Green",
+                            price: 51000
+                        }
+                    ]
+                },
+                {
+                    varientName: "Plus",
+                    price: 76000,
+                    colorOptions:[
+                        {
+                            color: "black",
+                            price: 76000
+                        },
+                        {
+                            color: "blue",
+                            price: 78000
+                        },
+                        {
+                            color: "Sea Green",
+                            price: 77000
+                        }
+                    ]
+                },
+            ]
+        }
+
+        // get Phone Model with Manufacturer
+        console.log(`Phone Manufacturer & Model is ${phone.manufacturer} ${phone["model-name"]}`)
+
+        // Getting Keys of an object
+        console.log(Object.keys(phone))
+
+        // getting Values from an object
+        console.log(Object.values(phone))
+
+        // Getting all key values pairs as array
+
+        console.log(Object.entries(phone))
+
+        let obj1 = {
+            name: "Anand",
+            designation: "Lead UI Developer",
+            print: function(){
+                console.log(this)
+            }
+        }
+
+        let anand = {
+            designation: "UI Developer",
+        };
+
+        Object.assign(anand, obj1);
+        
+        console.log(anand)
+
+        for(key in anand){
+            // console.log(typeof key)
+            console.log(`${key} = ${anand[key]}`)
+        }
+
+        for (key in phone){
+            // console.log(typeof key)
+            console.log(`${key} = `, phone[key])
+        }
+
+obj1.print()
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Class</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript Class</h1>
+    </header>
+    <script>
+        class Employee{
+            constructor(id, name, designation, department, salary){
+                this.id = id
+                this.name = name
+                this.department = department
+                this.designation = designation
+                this.salary = salary
+                this.reportingManager = null
+            }
+            greet(){
+                console.log(`Welcome ${this.name}`)
+            }
+        }
+
+        let emp1 = new Employee(1, "Anand Singh", "Lead UI Developer", "Web Development", 20000);
+        let emp2 = new Employee(1, "Rohit", "UI Developer", "Web Development", 30000);
+
+        emp1.reportingManager = "Xyz";
+        emp1.greet();
+        emp2.greet();
+
+        // inheritance
+
+        class Vehicle{
+            constructor(vehicleType, engineType){
+                this.vehicleType = vehicleType
+                this.engineType = engineType
+            }
+            log(){
+                console.log(`Vahicle Type: ${this.vehicleType} & Engine Type: ${this.engineType}`);
+            }
+        }
+
+        class Car extends Vehicle{
+            #makeYear
+            constructor(vehicleType, engineType, brand, model, makeYear){
+                super(vehicleType, engineType);
+                this.brand = brand
+                this.model = model
+                this.#makeYear = makeYear
+            }
+            getMakeYear(){
+                return this.#makeYear
+            }
+            setMakeYear(newMakeYear){
+                this.#makeYear = newMakeYear
+            }
+        }
+
+        let creta = new Car("4 Wheeler", "Hybrid", "Hundai", "Creta", "2025")
+
+        console.log(creta)
+        creta.log()
+
+        creta.vehicleType = "Hybrid"
+        creta.setMakeYear("2026")
+        let makeYear = creta.getMakeYear();
+        console.log(makeYear)
+    </script>
+</body>
+</html>

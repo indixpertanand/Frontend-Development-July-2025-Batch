@@ -100,7 +100,7 @@ main{
 
 .decorator{
     width: clamp(100px, calc(100px + 9vw), 203px);
-    height: clamp(300px, calc(250px + 60vh), 738px);
+    height: clamp(300px, calc(250px + 60vh), 645px);
     background: linear-gradient($primary, transparent);
       
 }
@@ -108,9 +108,50 @@ main{
     rotate: -45deg;
     translate: 0% -23%; 
 }
+.decorator.decorator-right{
+    rotate: 45deg;
+    translate: 0% -23%; 
+}
 
 .send-icon-inline{
     rotate: 45deg;
 }
 
-@import './header'
+.w-max-content{
+    width: max-content
+}
+
+.container-max{
+    width: 100%;
+    --container-width: 100%;
+    max-width: calc(var(--container-width) + ((100% - var(--container-width)) / 2))
+}
+@include media-breakpoint-up(sm){
+   .container-max{
+        --container-width: #{map-get($container-max-widths, sm)};
+   }
+}
+@include media-breakpoint-up(md){
+   .container-max{
+        --container-width: #{map-get($container-max-widths, md)};
+   }
+}
+@include media-breakpoint-up(lg){
+   .container-max{
+        --container-width: #{map-get($container-max-widths, lg)};
+   }
+}
+@include media-breakpoint-up(xl){
+   .container-max{
+        --container-width: #{map-get($container-max-widths, xl)};
+   }
+}
+@include media-breakpoint-up(xxl){
+   .container-max{
+        --container-width: #{map-get($container-max-widths, xxl)};
+   }
+}
+
+
+@import './header';
+@import './home'

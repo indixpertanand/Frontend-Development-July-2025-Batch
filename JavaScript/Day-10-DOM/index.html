@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .bg-red{
+            background-color: red;
+            color: white;
+        }
+        .bg-yellow{
+            background-color: yellow;
+            color: black;
+        }
+        .active{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Document Object Model</h1>
+    </header>
+    <main>
+        <section class="section" id="section1">
+            <h2>Second Level Heading 1</h2>
+        </section>
+        <section class="section" id="section2">
+            <div>
+                <h2>Second Level Heading 2</h2>
+            </div>
+            <h2>Second Level Heading 3</h2>
+            <h2 hidden>Section Level Heading 4</h2>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, architecto?</p>
+            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, architecto?</p>
+        </section>
+
+        <form action="#">
+            <input type="checkbox" class="cheks" value="1">
+            <input type="checkbox" class="cheks" value="2">
+            <input type="checkbox" class="cheks" value="3">
+            <input type="checkbox" class="cheks" value="4">
+            <input type="submit" id="submitButton" value="Submit">
+        </form>
+        
+        <button class="bg-red" id="btn1">Click Me</button>
+        <button class="bg-red bg-yellow" id="btn2">Click Me</button>
+        <button class="bg-red" id="btn3" onclick="console.log('From Inline')">Click Me active</button>
+    
+        <h2>Users</h2>
+        <table width="700" id="userTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anand</td>
+                    <td><button class="edit" data-id="1">Edit</button> <button class="delete" data-id="1">Delete</button> <button class="view" data-id="1">View</button></td>
+                </tr>
+                <tr>
+                    <td>Koushal</td>
+                    <td><button class="edit" data-id="2">Edit</button> <button class="delete" data-id="2">Delete</button> <button class="view" data-id="2">View</button></td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td><button class="edit" data-id="3">Edit</button> <button class="delete" data-id="3">Delete</button> <button class="view" data-id="3">View</button></td>
+                </tr>
+                <tr>
+                    <td>Suman</td>
+                    <td><button class="edit" data-id="4">Edit</button> <button class="delete" data-id="4">Delete</button> <button class="view" data-id="4">View</button></td>
+                </tr>
+                <tr>
+                    <td>Yamini</td>
+                    <td><button class="edit" data-id="5">Edit</button> <button class="delete" data-id="5">Delete</button> <button class="view" data-id="5">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

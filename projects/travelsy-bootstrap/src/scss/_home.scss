@@ -1,0 +1,63 @@
+.map-bg{
+    background: url('../images/map-image.webp') center/cover no-repeat;
+}
+.statsistics .icon-lg{
+    --size: 100px;
+    border: 7px solid rgba(255, 255, 255, .9)
+}
+  
+.statsistics .decorator-right{
+    translate: 0% -35%; 
+}
+
+.placesSwiper .bg-dark{
+    --bs-bg-opacity: .4;
+}
+
+// .testimonials-wrapper{
+//     grid-template-columns: 62% 38%;
+//     gap: 1.875rem;
+// }
+.testimonials-wrapper .testimonials-image{
+    transition: 1s all;
+    width: 44%;
+}
+
+.testimonials-wrapper .testimonials-image:is(.collapsed){
+    width: 28%
+}
+
+.testimonials-images{
+    min-height:210px;
+}
+@media (min-width: 400px){
+    .testimonials-images{
+    min-height: 250px;
+}
+}
+
+@include media-breakpoint-up(sm){
+   .testimonials-images{
+        min-height: 333px;
+    }
+}
+@include media-breakpoint-up(md){
+   .testimonials-images{
+        min-height: 461px;
+    }
+}
+@include media-breakpoint-up(lg){
+   .testimonials-images{
+        min-height: 356px;
+    }
+}
+@include media-breakpoint-up(xl){
+   .testimonials-images{
+        min-height: 418px;
+    }
+}
+@include media-breakpoint-up(xxl){
+   .testimonials-images{
+        min-height: 447px;
+    }
+}
