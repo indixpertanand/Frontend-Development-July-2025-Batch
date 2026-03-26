@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing Debouncing</title>
+    <style>
+         form{
+            max-width: 400px;
+            margin-inline: auto;
+            padding: 40px 30px;
+            background: #fff;
+            box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+            border-radius: 10px;
+        }
+        .form-control{
+            width: 100%;
+            padding: .5rem 1rem
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            min-height: 200vh;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Implementing Debouncing</h1>
+    <main>
+        <form action="#">
+            <input type="search" placeholder="Search here..." name="search" id="searchInput" class="form-control">
+            
+            <h5>Normal Count: <span id="normalCount">0</span></h5>
+            <h5>Debounce Count: <span id="debounceCount">0</span></h5>
+            <h5>Throttle Count: <span id="throttleCount">0</span></h5>
+        </form>
+
+
+    </main>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        let normalCount = 0;
+        let debounceCount = 0;
+        let throttleCount = 0;
+
+        function increaseNormalCount(e){
+            normalCount++;
+            let countEL = document.querySelector('#normalCount')
+            countEL.textContent = e.target.value;
+            console.log('normal' +  e.target.value)
+        }
+        function increaseDebounceCount(e){
+            debounceCount++;
+            let countEL = document.querySelector('#debounceCount')
+            countEL.textContent = e.target.value;
+            console.log('Debounce' +  e.target.value)
+        }
+        function increaseThrottleCount(e){
+            throttleCount++;
+            let countEL = document.querySelector('#throttleCount')
+            countEL.textContent = e.target.value;
+            console.log('Throttle' +  e.target.value)
+        }
+
+        let searchBar = document.querySelector('[type="search"]');
+
+        searchBar.addEventListener('input', increaseNormalCount)
+        searchBar.addEventListener('input', debounce(increaseDebounceCount, 1000))
+        searchBar.addEventListener('input', throttle(increaseThrottleCount, 1000))
+
+        function debounce(func, delay){
+            let timer;
+            return function(...args){
+                clearTimeout(timer);
+                timer = setTimeout(()=>{
+                    func.apply(this, args)
+                }, delay)
+            }
+        }
+
+        
+        function throttle(func, delay){
+            let lastCall = 0; let timer;
+            return function(...args){
+                if((Date.now() - lastCall) >= delay){
+                    func.apply(this, args);
+                    lastCall = Date.now();
+                }else{
+                    clearTimeout(timer)
+                    timer = setTimeout(()=>{
+                        func.apply(this, args);
+                    }, delay)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
