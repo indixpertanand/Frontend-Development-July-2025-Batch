@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Error Handling</title>
+</head>
+<body>
+    <header><h1>Javascript Error Handling</h1></header>
+
+    <script>
+        function abc(){
+            try{
+                const name = 'Anand ';
+                let age = 17;
+                console.log(isAdult(age))
+            }catch(err){
+                console.log(err)
+            }finally{
+                console.log('From Finally Block')
+            }
+        }
+        abc();
+
+
+        function isAdult(age){
+           if(age < 18) throw new Error("User must be 18 or above");
+           return 'Access Granted'
+        }
+
+
+        function fetchUsers(){
+            return fetch('https://mock.beeceptor.com/users')
+        }
+
+        async function getUsers(){
+            try{
+                let usersRes = await fetchUsers();
+                console.log(usersRes);
+                let usersData = await usersRes.json();
+                console.log(usersData)  
+            }catch(err){                
+                console.log(err)
+            }
+        }
+        
+        getUsers();
+
+    </script>
+</body>
+</html>

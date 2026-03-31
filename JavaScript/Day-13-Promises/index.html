@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Promises</title>
+</head>
+<body>
+    <header><h1>Javascript Promises</h1></header>
+
+    <script>
+        let promise1 = new Promise((resolve, reject)=>{            
+            // let a = prompt("Please Enter a number")
+            // let b = prompt("Please Enter second number");
+            setTimeout(()=>{
+                if(false){
+                    resolve("a is greater than b")
+                }else{
+                    reject("a is less than b")
+                }
+            }, 2000)            
+        });
+        promise1
+        .then((res)=> {
+            console.log(res)
+            // p2.then()
+            // .catch(()=>{
+            //     p3.then(()=>{
+
+            //     })
+            // })
+        })
+        .catch((err)=> console.log(err))
+        .finally(()=>('Promise has been either fullfilled or rejected'))
+
+        
+        console.log('From Code');
+        // function fetchUsers(){
+        //     return new Promise((resolve, reject)=>{
+        //         setTimeout(()=>{
+        //             reject("Response From Promise");
+        //         }, 2000)
+        //     })
+        // }
+
+        function fetchUsers(){
+            return fetch('https://fake-json-api.mock.beeceptor.com/users')
+        }
+        function createUser(user){
+            return fetch('https://fake-json-api.mock.beeceptor.com/users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(user)
+            })
+        }
+
+        async function getUsers(){
+            let usersRes = await fetchUsers();
+            let usersData = await usersRes.json();
+            console.log(usersData)    
+            printName(usersData[0].name)      
+        }
+
+        function printName(name){
+            console.log(`${name}`)
+        }
+        // let users = fetchUsers()
+        // users.then((res)=>{
+        //     if(res.ok){
+        //         let userData = res.json();
+        //         userData
+        //             .then((data)=>{
+        //                 console.log(data)
+        //             })  
+        //     }              
+        // })
+
+        let abc = getUsers();
+        console.log(abc)
+        async function addUser(){
+            const user = { username: 'john_doe', email: 'john@example.com', password: 'pass123' };
+            let usersRes = await createUser(user);
+            if(usersRes.ok){
+                // let usersData = await usersRes.json();
+                console.log(usersRes)
+            }            
+        }
+
+        // addUser();
+
+        // SetInterval = run every given time;
+        let a = 0; let interval;
+        interval = setInterval(()=>{
+            if(a>=10) clearInterval(interval);
+            console.log(a)
+            a++
+        }, 1000)
+
+    
+
+    </script>
+</body>
+</html>
